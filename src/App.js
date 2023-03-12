@@ -1,48 +1,23 @@
 import Navbar from "./Navbar";
 import myGif from './back.gif';
 import { useState } from "react";
-import { hover } from "@testing-library/user-event/dist/hover";
+import Chatbot from "./chatbot";
+import Form from "./form";
 
 function App() {
 
-  const [hidden,setHidden] = useState('hidden');
+  
+
+
   return (
     
     <div className="App" style={{backgroundColor:'black'}}>
     <Navbar />  
-    <div className="algo-journal-btn ui-draggable ui-draggable-handle" style={{color:'white'}} onClick={()=>{
-      if (hidden==='hidden')
-      setHidden('inherit');
-      else
-      setHidden('hidden');
-console.log(hidden);
-      }}>
-  
-   <div className="algo-journal-wrapper" style={{top: '170.986px', left: "110.986px", display: "block",visibility:hidden}}  >
-    <div className="algo-journal-header">Malek Mohamed Elkssas</div>
-<div className="algo-journal-list">
-      {'hi you'}
-</div>
-</div>
-</div>
-    <div className="neon-border">
-      <form className="create" onSubmit={() =>{}}>
-                <label> User name</label>
-                <input 
-                    type="text"
-                    required
-                />
-                <label> Password</label>
-                <input 
-                type="password"
-                    required
-                >
-                </input>
-                <button> Log in</button>
-            </form>
-            
 
-    </div>
+    <Chatbot />
+
+    <Form />
+    
       <img src={myGif} alt="my-gif" style={{
         margin:'0 0 0 35%',
         width:'30%',
