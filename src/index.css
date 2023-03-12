@@ -29,13 +29,16 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #ddd;
 }
 
 
 
 .navbar a:hover {
-  color: blueviolet;
+  color: rgb(255, 0, 0);
 }
+
+
 
 .create {
   max-width: 400px;
@@ -85,4 +88,66 @@
   border: 3px solid red;
   border-radius: 5px;
   box-shadow: 0 0 1px red, 0 0 1px red, 0 0 1px red, 0 0 20px red;
+}
+.neon-border input:hover ,button:hover  {
+  box-shadow: 1px 3px 5px rgb(255, 0, 0);
+}
+
+.algo-journal-btn{
+        position: fixed;
+        bottom: 44px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        /* background-image: url(/img/kepler.png); */
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        z-index: 3;
+        border-radius:100px;
+        left: 50.99px;
+        top: 530.451px;
+      }
+
+.algo-journal-btn {
+  background-image: url(0d0290e72c704812c857e2b2a98338eb.png) !important;
+}
+
+.ui-draggable-handle {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.algo-journal-wrapper {
+  position: fixed;
+  bottom: 114px;
+  right: 20px;
+  width: 325px;
+  height: 372px;
+  margin-top: -11px;
+  box-shadow: 1px 1px 8px 0 rgb(0 0 0 / 10%);
+  background-color: transparent;
+  border-radius: 5px;
+  z-index: 5;
+  display: none;
+}
+
+.algo-journal-btn,
+.algo-journal-wrapper {
+  z-index: 1031 !important;
+}
+
+.algo-journal-header {
+  height: 28px;
+  background-color: #DEDEDE;
+  text-align: center;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.algo-journal-list {
+  height: 344px;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #FFFFFF;
 }
