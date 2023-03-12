@@ -10,16 +10,19 @@ const Chatbot = (props) => {
         setHidden('hidden');
   }
     return (  
-        <div className="algo-journal-btn ui-draggable ui-draggable-handle" onClick={chatbotchat}>
-      <div className="algo-journal-wrapper" style={{visibility:hidden, }}>
+        <div className="algo-journal-btn" onClick={chatbotchat}>
+      <div className="algo-journal-wrapper" style={{visibility:hidden}} onClick={(e) => e.stopPropagation()}>
         <div className="algo-journal-header">Malek Mohamed Elkssas</div>
           <div className="algo-journal-list" >
             <div className="algo-journal-list-item">
                 <div className="student-name">Malek Mohamed</div>
                 <div className="project-name">Hi</div>
             </div>
-          </div>
-          
+          </div> 
+          <form  style={{position: 'absolute', bottom: '0',display:'flex'}}>
+            <input type="text" style={{color:'black',backgroundColor:'white',width:'300px'}}/>
+            <button style={{backgroundColor:'red'}}>.</button>
+          </form>
       </div>
     </div>
 
