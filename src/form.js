@@ -1,15 +1,15 @@
-
+import image1 from './image1.png'
+import image2 from './image2.png'
+import image3 from './image3.png'
 
 const Form = (props) => {
     return (
         
         
-
-        <div className="neon-border" style={{display:'flex'}}>
+    <div>
             
-        <div className="try"></div>
-
-      <form className="neon-border-inside" onSubmit={() =>{}}>
+        <div className="neon-border" style={{display:'flex'}}>
+        <form className="neon-border-inside" style={{zIndex:'1'}} onSubmit={() =>{}}>
                 <label>{props.first}</label>
                 <input 
                     type="text"
@@ -22,10 +22,23 @@ const Form = (props) => {
                 >
                 </input>
                 <button onClick={props.fourth}>{props.third}</button>
-            </form>
+        </form>
+            <div className="try2"></div>
                 
-    </div>
-    
+        </div>
+
+        <div className="container" style={{height:'300px'}}>
+            <div className="queue">
+                <img src={image1} alt="image1" />
+                <img src={image2} alt="image2" />
+                <img src={image3} alt="image3"/>
+            </div>
+        </div>
+
+
+
+
+        </div>
             
      );
 }
