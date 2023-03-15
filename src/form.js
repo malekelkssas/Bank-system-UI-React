@@ -1,8 +1,15 @@
-import myGif from './back.gif';
+
+
 const Form = (props) => {
-    return ( 
-        <div className="neon-border">
-      <form className="create" onSubmit={() =>{}}>
+    return (
+        
+        
+
+        <div className="neon-border" style={{display:'flex'}}>
+            
+        <div className="try"></div>
+
+      <form className="neon-border-inside" onSubmit={() =>{}}>
                 <label>{props.first}</label>
                 <input 
                     type="text"
@@ -16,12 +23,10 @@ const Form = (props) => {
                 </input>
                 <button onClick={props.fourth}>{props.third}</button>
             </form>
-            <img src={myGif} alt="my-gif" style={{
-        margin:'0 0 0 35%',
-        width:'30%',
-      }} />
+                
     </div>
     
+            
      );
 }
  

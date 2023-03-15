@@ -8,7 +8,7 @@ const Navbar = () => {
                 <Link to='/Signin'>Sign in</Link>
                 <Link to="/Acount" style={{
                     color:'white',
-                    backgroundColor:"red",
+                    backgroundColor:"#0A2A5E",
                     borderRadius:'8px'
                 }}>New acount</Link>
             </div>

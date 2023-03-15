@@ -5,6 +5,7 @@ import Form from "./form";
 import Acount from "./Acount";
 import Signin from "./signin";
 import { useHistory } from "react-router-dom";
+
 function App() {
 
   const history = useHistory();
@@ -13,7 +14,7 @@ function App() {
   return (
     
     <Router>
-      <div className="App" style={{backgroundColor:'black'}}>
+      <div className="App" >
     <Navbar />  
 
     <Switch>

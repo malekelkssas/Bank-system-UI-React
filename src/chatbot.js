@@ -1,4 +1,5 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
+import send from './images-removebg-preview.png'
 
 const Chatbot = (props) => {
     let id = 0;
@@ -24,24 +25,24 @@ const Chatbot = (props) => {
   }
 
     return (  
-        <div className="algo-journal-btn" onClick={chatbotchat}>
-      <div className="algo-journal-wrapper" style={{visibility:hidden}} onClick={(e) => e.stopPropagation()}>
-        <div className="algo-journal-header">Malek Mohamed Elkssas</div>
-          <div className="algo-journal-list" >
+        <div className="chat-btn" onClick={chatbotchat}>
+      <div className="chat-btn-box" style={{visibility:hidden}} onClick={(e) => e.stopPropagation()}>
+        <div className="chat-btn-box-header">Malek Mohamed Elkssas</div>
+          <div className="chat-btn-box-list" >
             
                 {
                 formData.map((item) => (
-                  <div className="algo-journal-list-item" key={id++}>
-                    <div className="student-name">{item.name}</div>
-                    <div className="project-name">{item.mass}</div>
+                  <div className="chat-btn-box-list-item" key={id++} >
+                    <div className="user-name">{item.name}</div>
+                    <div className="reply">{item.mass}</div>
                   </div>
                 ))
                 }
             
           </div> 
-          <form onSubmit={handlesubmit} style={{position: 'absolute', bottom: '0',display:'flex'}}>
-            <input type="text" value={title} onChange={e =>setTitle(e.target.value)} style={{color:'black',backgroundColor:'white',width:'300px'}}/>
-            <button style={{backgroundColor:'red'}}>.</button>
+          <form className="chat-btn-submit-form" onSubmit={handlesubmit} >
+            <input type="text" value={title} onChange={e =>setTitle(e.target.value)} style={{}}/>
+            <img onClick={handlesubmit} src={send} alt='images' />
           </form>
       </div>
     </div>
