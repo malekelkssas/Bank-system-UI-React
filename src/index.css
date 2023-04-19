@@ -47,29 +47,13 @@
 
 .neon-border {
   max-width: 600px;
-  max-height: 800px;
-  margin: 130px auto;
+  margin: 20px auto;
   align-content: center;
-  /* border: 3px solid #0756d4; */
-  /* border-radius: 200px; */
-  /* box-shadow: 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 20px #0A2A5E; */
-  background-color: 'transparent';
-  z-index: 1;
-
+  border: 3px solid #0756d4;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 20px #0A2A5E;
+  
 }
-.try2 {
-  position: absolute;
-  background-image: url("background_2.png");
-  background-size: 660px 660px;
-  background-repeat: no-repeat;
-  background-position-x: -46px;
-  background-position-y: -40px;
-  width: 560px;
-  height: 550px;
-  top: 0;
-  margin: 70px 30px 30px 10px;
-}
-
 
 .try {
   position: fixed;
@@ -77,17 +61,13 @@
   right: 20px;
   width: 300px;
   height: 300px;
-  background-image: url('backgrounf_design.png');
+  background-image: url('../src/images/backgrounf_design.png');
   background-repeat: no-repeat;
   background-size: 300px 300px;
   z-index: -1;
-  border-radius: 600px;
-  left: 200.99px;
-  top: 320.451px;
-}
-
-.try4{
-background-color: #f1356d;
+  border-radius: 300px;
+  left: 120.99px;
+  top: 330.451px;
 }
 
 .neon-border input:hover ,button:hover  {
@@ -152,7 +132,7 @@ background-color: #f1356d;
       }
 
 .chat-btn {
-  background-image: url(chatbot.jpg) !important;
+  background-image: url(../src/images/chatbot.jpg) !important;
 }
 
 
@@ -249,31 +229,38 @@ padding:2px 0 0 0;
   
 }
 
-
-.container {
-  overflow: hidden;
-  /* make sure the container clips the images */
+.contact-us {
+  border-top: 2px solid blue;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
 }
 
-.queue {
+.social-media-list {
   display: flex;
-  animation: slide 10s linear infinite;
-  /* animate the images with the slide animation */
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.queue img {
+.social-media-list li {
   margin-right: 20px;
-  height: 300px;
-  /* add some spacing between the images */
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
+.social-media-list li:last-child {
+  margin-right: 0;
+}
 
-  100% {
-    transform: translateX(calc(-100% + 20px));
-    /* subtract the margin-right value from the 100% to keep the images aligned */
-  }
+.social-media-list a {
+  color: blue;
+}
+
+.social-media-list i {
+  font-size: 24px;
 }
