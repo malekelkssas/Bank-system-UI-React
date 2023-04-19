@@ -1,5 +1,5 @@
 import { useState } from "react";
-import send from './images-removebg-preview.png'
+import send from '../images/images-removebg-preview.png'
 
 const Chatbot = (props) => {
     let id = 0;

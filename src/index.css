@@ -61,7 +61,7 @@
   right: 20px;
   width: 300px;
   height: 300px;
-  background-image: url('backgrounf_design.png');
+  background-image: url('../src/images/backgrounf_design.png');
   background-repeat: no-repeat;
   background-size: 300px 300px;
   z-index: -1;
@@ -132,7 +132,7 @@
       }
 
 .chat-btn {
-  background-image: url(chatbot.jpg) !important;
+  background-image: url(../src/images/chatbot.jpg) !important;
 }
 
 
@@ -227,4 +227,40 @@ height:20px;
 width:17px;
 padding:2px 0 0 0;
   
+}
+
+.contact-us {
+  border-top: 2px solid blue;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media-list li {
+  margin-right: 20px;
+}
+
+.social-media-list li:last-child {
+  margin-right: 0;
+}
+
+.social-media-list a {
+  color: blue;
+}
+
+.social-media-list i {
+  font-size: 24px;
 }
