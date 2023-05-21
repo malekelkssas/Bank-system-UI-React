@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay Credit Card Bills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pay Credit Card Bills</h1>
+  </header>
+  <!-- Your credit card bill payment form goes here -->
+  <form>
+    <label for="bill-select">Select Bill:</label>
+    <select id="bill-select" name="bill-select">
+      <option value="bill-1">Bill 1 - $100.00</option>
+      <option value="bill-2">Bill 2 - $250.00</option>
+      <option value="bill-3">Bill 3 - $500.00</option>
+      <!-- Add more bill options here -->
+    </select>
+    <label for="payment-amount">Payment Amount:</label>
+    <input type="number" id="payment-amount" name="payment-amount" placeholder="Enter payment amount">
+    <button type="submit">Pay Bills</button>
+  </form>
+  <!-- Bills to Pay table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Bill</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bill 1</td>
+        <td>$100.00</td>
+      </tr>
+      <tr>
+        <td>Bill 2</td>
+        <td>$250.00</td>
+      </tr>
+      <tr>
+        <td>Bill 3</td>
+        <td>$500.00</td>
+      </tr>
+      <!-- Add more bill data here -->
+    </tbody>
+  </table>
+  <footer>
+    <p>&copy; 2023 Banking App. All rights reserved.</p>
+  </footer>
+</body>
+</html>

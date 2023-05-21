@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head section remains the same -->
+</head>
+<body>
+  <header>
+    <link rel="stylesheet", href="style.css">
+    <h1>Set Reminders</h1>
+  </header>
+  <!-- Your reminder setting form goes here -->
+  <form id="reminder-form">
+    <label for="reminder">Reminder:</label>
+    <input type="text" id="reminder" name="reminder" placeholder="Enter a reminder">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+
+    <button type="submit">Set Reminder</button>
+  </form>
+
+  <!-- Reminder list -->
+  <ul id="reminder-list">
+    <!-- Existing reminders will be added dynamically here -->
+  </ul>
+
+  <footer>
+    <p>&copy; 2023 Banking App. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

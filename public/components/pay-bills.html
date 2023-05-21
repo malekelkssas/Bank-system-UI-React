@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay Credit Card Bills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pay Credit Card Bills</h1>
+  </header>
+  <!-- Your credit card bill payment form goes here -->
+  <form>
+    <label for="bill-select">Select Bill:</label>
+    <select id="bill-select" name="bill-select">
+      <option value="bill-1">Water Bill - $100.00</option>
+      <option value="bill-2">Electricity Bill - $50.00</option>
+      <option value="bill-3">Phone Bill - $70.00</option>
+      <!-- Add more bill options here -->
+    </select>
+    <label for="payment-amount">Payment Amount:</label>
+    <input type="number" id="payment-amount" name="payment-amount" placeholder="Enter payment amount">
+    <button type="submit">Pay Bills</button>
+  </form>
+  <!-- Bills to Pay table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Bill</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Water Bill</td>
+        <td>$100.00</td>
+      </tr>
+      <tr>
+        <td>Electricity Bill</td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>Phone Bill</td>
+        <td>$70.00</td>
+      </tr>
+      <!-- Add more bill data here -->
+    </tbody>
+  </table>
+  <footer>
+    <p>&copy; 2023 Banking App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
