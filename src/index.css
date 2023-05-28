@@ -18,6 +18,14 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #0A2A5E;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: transparent;
+  z-index: 999;
+  /* Optional: Set a higher value if needed */
 }
 
 .navbar h1 {
@@ -229,7 +237,7 @@ padding:2px 0 0 0;
   
 }
 
-.contact-us {
+/* .contact-us {
   border-top: 2px solid blue;
   position: fixed;
   bottom: 0;
@@ -239,8 +247,15 @@ padding:2px 0 0 0;
   padding: 20px;
   background-color: white;
   width: 80%;
+} */
+.contact-us {
+  border-top: 2px solid blue;
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  width: 80%;
+  margin: 30px auto;
 }
-
 .social-media-list {
   display: flex;
   justify-content: center;
@@ -263,4 +278,96 @@ padding:2px 0 0 0;
 
 .social-media-list i {
   font-size: 24px;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 30px 50px; */
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #7bd58e;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: -20px;
+  width: 160px;
+  height: 80px;
+  opacity: 0.8;
+}
+
+
+.button-text {
+  white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.button-arrow {
+  align-items: end;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #ffffff;
+  margin-left: 15px;
+}
+
+.grid-container {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: -100px;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.grid-container .custom-button:nth-last-child(-n+2) {
+  justify-self: center;
+  margin-left: 100px;
+}
+
+.mainPageForm {
+  padding-top:50px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainPageForm label {
+  text-align: left;
+  font-weight: bold;
+  display: block;
+  color: #0756d4;
+  margin: 50px 0 0 0;
+}
+
+.mainPageForm h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.mainPageForm input,
+.mainPageForm textarea,
+.mainPageForm select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.mainPageForm button {
+  background: #4c00ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  height: 45px;
+  width: 110px;
 }

@@ -1,0 +1,26 @@
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 50px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #7bd58e;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.button-text {
+    margin-right: 10px;
+}
+
+.button-arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #ffffff;
+}
