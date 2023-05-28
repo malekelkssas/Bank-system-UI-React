@@ -4,24 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Report Issues</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/support-style.css">
 </head>
 <body>
   <header>
-    <h1>Report Issues</h1>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/bank-logo.png" alt="Bank Logo">
+      </a>
+    </div>
+    <nav class="navigation">
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/account.png" alt="Support">
+          <span>My Account</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="redeem-points.html">
+            <img src="images/redeem-pints.png" alt="Redeem"> <br>
+            <span>Redeem</span>
+          </a>
+          <a href="notifications.html">
+            <img src="images/notification.png" alt="Notifications"> <br>
+            <span>Notifications</span>
+          </a>
+          <a href="set-reminders.html">
+            <img src="images/reminders.png" alt="Reminders"> <br>
+            <span>Reminders</span>
+          </a>
+          <a href="">
+            <img src="images/logout.png" alt="Logout"> <br>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/open-account.png" alt="Services">
+          <span>Services</span>
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-transaction">
+            <a href="#">
+              <img src="images/applications.png"> <br>
+              Applications
+            </a>
+            <div class="nested-dropdown-content">
+              <a href="apply-credit-card.html">
+                <img src="images/credit-card.png" alt="Credit Card Image"> <br>
+                Credit Card</a>
+              <a href="apply-loan.html">
+                <img src="images/loan.png" alt="Loan Image"> <br>
+                Loan</a>
+            </div>
+          </div>
+          <a href="open-account.html">
+            <img src="images/open-account.png"> <br>
+            My bank account</a>
+          <a href="view-account-transactions.html">
+            <img src="images/transaction.png"> <br>
+            Transactions</a>
+          <a href="transfer-money.html">
+            <img src="images/transfer-money.png"> <br>
+            Transfer Money</a>
+          <a href="pay-credit-card-bills.html">
+            <img src="images/bills.png"> <br>
+            Bills</a>
+        </div> 
+      </div>
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/support.png" alt="Support">
+          <span>Support</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="report-issues.html">
+            <img src="images/technical-issue.png"> <br>
+            Technical issue</a>
+            <a href="report-credit-card.html">
+              <img src="images/credit-card-problem.png"> <br>
+              Credit Card Problem</a>
+        </div>
+      </div>
+    </nav>
   </header>
   <!-- Your issue reporting form goes here -->
   <form>
     <label for="issue">Issue:</label>
     <textarea id="issue" name="issue" placeholder="Describe the issue"></textarea>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email">
-
-    <button type="submit">Report Issues</button>
+    <button id="report-button" type="submit">Report Issues</button>
   </form>
   <footer>
-    <p>&copy; 2023 Banking App. All rights reserved.</p>
+    <p>&copy; 2023 GUCB. All rights reserved.</p>
   </footer>
+  <script>
+    document.getElementById('report-button').addEventListener('click', function() {
+      if(document.getElementById('issue').value == '')
+      alert('Please don\'t leave the issue empty')
+      else
+      alert('Thank you for reporting the issue. We will address it as soon as possible.');
+    });
+  </script>
 </body>
 </html>

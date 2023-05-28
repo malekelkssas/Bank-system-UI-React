@@ -1,34 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banking App</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Bank Website</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to the Banking App</h1>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/bank-logo.png" alt="Bank Logo">
+      </a>
+    </div>
+    <nav class="navigation">
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/account.png" alt="Support">
+          <span>My Account</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="redeem-points.html">
+            <img src="images/redeem-pints.png" alt="Redeem"> <br>
+            <span>Redeem</span>
+          </a>
+          <a href="notifications.html">
+            <img src="images/notification.png" alt="Notifications"> <br>
+            <span>Notifications</span>
+          </a>
+          <a href="set-reminders.html">
+            <img src="images/reminders.png" alt="Reminders"> <br>
+            <span>Reminders</span>
+          </a>
+          <a href="">
+            <img src="images/logout.png" alt="Logout"> <br>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/open-account.png" alt="Services">
+          <span>Services</span>
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-transaction">
+            <a href="#">
+              <img src="images/applications.png"> <br>
+              Applications
+            </a>
+            <div class="nested-dropdown-content">
+              <a href="apply-credit-card.html">
+                <img src="images/credit-card.png" alt="Credit Card Image"> <br>
+                Credit Card</a>
+              <a href="apply-loan.html">
+                <img src="images/loan.png" alt="Loan Image"> <br>
+                Loan</a>
+            </div>
+          </div>
+          <a href="open-account.html">
+            <img src="images/open-account.png"> <br>
+            My bank accounts</a>
+          <a href="view-account-transactions.html">
+            <img src="images/transaction.png"> <br>
+            Transactions</a>
+          <a href="transfer-money.html">
+            <img src="images/transfer-money.png"> <br>
+            Transfer Money</a>
+          <a href="pay-credit-card-bills.html">
+            <img src="images/bills.png"> <br>
+            Bills</a>
+        </div> 
+      </div>
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/support.png" alt="Support">
+          <span>Support</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="report-issues.html">
+            <img src="images/technical-issue.png"> <br>
+            Technical issue</a>
+            <a href="report-credit-card.html">
+              <img src="images/credit-card-problem.png"> <br>
+              Credit Card Problem</a>
+        </div>
+      </div>
+    </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="open-account.html">Open Account</a></li>
-      <li><a href="apply-credit-card.html">Apply for Credit Card</a></li>
-      <li><a href="apply-loan.html">Apply for Loan</a></li>
-      <li><a href="view-account-transactions.html">View Account Transactions</a></li>
-      <li><a href="view-credit-card-transactions.html">View Credit Card Transactions</a></li>
-      <li><a href="redeem-points.html">Redeem Points for Cashback</a></li>
-      <li><a href="pay-credit-card-bills.html">Pay Credit Card Bills</a></li>
-      <li><a href="transfer-money.html">Transfer Money</a></li>
-      <li><a href="set-reminders.html">Set Reminders</a></li>
-      <li><a href="pay-bills.html">Pay Bills</a></li>
-      <li><a href="report-issues.html">Report Issues</a></li>
-      <li><a href="notifications.html">Notifications</a></li>
-      <li><a href="report-credit-card.html">Report Credit Card Issues</a></li>
-    </ul>
-  </nav>
+
+  <div class="main-content">
+    <h1>About GUCB</h1>
+    <div class="box">
+      <img src="images/smile.jpg" alt="Image of GUCB">
+      <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
+    </div>
+
+    <div class="box">
+      <img src="images/bank-office.jpg" alt="Image of GUCB">
+      <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
+    </div>
+
+    <section class="cards contact" id="contact">
+      <h2 class="title">Contact Information</h2>
+      <div class="content">
+          <div class="card">
+                <div class="info">
+                  <img src="images/mail.png">
+                <h3> Email</h3>
+                <a href="mailto:info@GUCB.com.eg"><p>info@GUCB.com.eg</p></a>
+                </div>
+          </div>
+          <div class="card">
+              <div class="info">
+                <img src="images/phone.png">
+              <h3> Phone</h3>
+              <a href="tel:11942"><p>11942</p></a>
+              </div>
+          </div>  
+
+          <div class="card">
+            <div class="info">
+              <img src="images/address.png">
+            <h3>Head Office</h3>
+            <p>5th Settlement, Cairo</p>
+            </div>
+        </div> 
+          </div>
+  </section>
+  </div>
   <footer>
-    <p>&copy; 2023 Banking App. All rights reserved.</p>
+    <p>&copy; 2023 GUCB. All rights reserved.</p>
   </footer>
 </body>
 </html>

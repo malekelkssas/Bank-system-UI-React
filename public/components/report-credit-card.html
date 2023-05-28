@@ -3,25 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Report Credit Card Issues</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Report Issues</title>
+  <link rel="stylesheet" href="styles/support-style.css">
 </head>
 <body>
   <header>
-    <h1>Report Credit Card Issues</h1>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/bank-logo.png" alt="Bank Logo">
+      </a>
+    </div>
+    <nav class="navigation">
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/account.png" alt="Support">
+          <span>My Account</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="redeem-points.html">
+            <img src="images/redeem-pints.png" alt="Redeem"> <br>
+            <span>Redeem</span>
+          </a>
+          <a href="notifications.html">
+            <img src="images/notification.png" alt="Notifications"> <br>
+            <span>Notifications</span>
+          </a>
+          <a href="set-reminders.html">
+            <img src="images/reminders.png" alt="Reminders"> <br>
+            <span>Reminders</span>
+          </a>
+          <a href="">
+            <img src="images/logout.png" alt="Logout"> <br>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/open-account.png" alt="Services">
+          <span>Services</span>
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-transaction">
+            <a href="#">
+              <img src="images/applications.png"> <br>
+              Applications
+            </a>
+            <div class="nested-dropdown-content">
+              <a href="apply-credit-card.html">
+                <img src="images/credit-card.png" alt="Credit Card Image"> <br>
+                Credit Card</a>
+              <a href="apply-loan.html">
+                <img src="images/loan.png" alt="Loan Image"> <br>
+                Loan</a>
+            </div>
+          </div>
+          <a href="open-account.html">
+            <img src="images/open-account.png"> <br>
+            My bank account</a>
+          <a href="view-account-transactions.html">
+            <img src="images/transaction.png"> <br>
+            Transactions</a>
+          <a href="transfer-money.html">
+            <img src="images/transfer-money.png"> <br>
+            Transfer Money</a>
+          <a href="pay-credit-card-bills.html">
+            <img src="images/bills.png"> <br>
+            Bills</a>
+        </div> 
+      </div>
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/support.png" alt="Support">
+          <span>Support</span>
+        </a>
+        <div class="dropdown-content">
+          <a href="report-issues.html">
+            <img src="images/technical-issue.png"> <br>
+            Technical issue</a>
+            <a href="report-credit-card.html">
+              <img src="images/credit-card-problem.png"> <br>
+              Credit Card Problem</a>
+        </div>
+      </div>
+    </nav>
   </header>
   <!-- Your issue reporting form goes here -->
   <form>
-    <label for="issue">Card Issue:</label>
-    <textarea id="issue" name="issue" placeholder="Describe the issue"></textarea>
+    <!-- Replace the textarea with a radio list -->
+<div id="issue">
+  <input type="radio" id="lost" name="issue" value="Credit Card was lost">
+  <label for="lost">Credit Card was lost</label>
+  <br>
+  <input type="radio" id="stolen" name="issue" value="Credit Card was stolen">
+  <label for="stolen">Credit Card was stolen</label>
+  <br>
+  <input type="radio" id="theft" name="issue" value="Credit Card was theft">
+  <label for="theft">Credit Card was theft</label>
+  <br>
+</div>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email">
+<button id="report-button" type="button" onclick="submitForm()">Apply for replacement</button>
 
-    <button type="submit">Report Issues</button>
   </form>
   <footer>
-    <p>&copy; 2023 Banking App. All rights reserved.</p>
+    <p>&copy; 2023 GUCB. All rights reserved.</p>
   </footer>
+
+  <script>
+    function submitForm() {
+      var radioButtons = document.querySelectorAll('input[name="issue"]');
+      var isRadioButtonSelected = false;
+
+      for (var i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+          isRadioButtonSelected = true;
+          break;
+        }
+      }
+
+      if (!isRadioButtonSelected) {
+        alert("Please select an issue option");
+      } else {
+        window.location.href = "apply-credit-card.html";
+      }
+    }
+  </script>
 </body>
 </html>
