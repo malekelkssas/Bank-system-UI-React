@@ -5,23 +5,30 @@ const Points = () => {
 
     const [pointsarr, setpoints] = useState(
         [{
-            points:1000,
+            points:'1000',
             cachBack:"$10.00"
         },
         {
-            points:2000,
+            points:'2000',
             cachBack:"$10.00"
         },
         {
-            points:3000,
+            points:'3000',
             cachBack:"$10.00"
         }]
     );
 
+    const complete = (str) =>{
+        while(str.length != 4){
+            str += " ";
+        }
+        return str;
+    }
+
     const handlesubmit = (e) =>{
         e.preventDefault();
         let tmp = pointsarr;
-        tmp.push({points:parseInt(pointsInput),cachBack:"$10.00"});
+        tmp.push({points:complete(pointsInput),cachBack:"$10.00"});
         setpoints(tmp);
         setInpoints('');
         console.log("here",pointsarr);
@@ -47,7 +54,7 @@ const Points = () => {
             pointsarr.map((item, index) =>(
                     <div className="blog-preview" key={index}>
                         <h2 style={{paddingRight:"25px"}}>{ item.points } </h2>
-                        <p>{ item.cachBack } </p>
+                        <p style={{justifyItems:"end"}}>{ item.cachBack } </p>
                     </div>
                 ) )
             }

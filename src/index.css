@@ -463,9 +463,15 @@ padding:2px 0 0 0;
 .blog-preview h2 {
   font-size: 20px;
   color: rgb(112, 216, 152);
-  margin-bottom: 10px;
+  margin: 0 0 0 30px;
+  /* margin-bottom: 10px;
   margin-right: 150px;
-  margin-left: 50px;
+  margin-left: 50px; */
+}
+
+.blog-preview p {
+  margin-left: 210px;
+  /* Add left margin between h2 and p */
 }
 
 .createPoints {
@@ -490,7 +496,7 @@ padding:2px 0 0 0;
 .createPoints textarea,
 .createPoints select {
   width: 100%;
-  padding: 6px 30px;
+  padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
   box-sizing: border-box;

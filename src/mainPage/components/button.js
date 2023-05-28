@@ -71,6 +71,19 @@ const Button = (props) => {
       }
     }
 
+    if(!ans)
+    {
+      if(props.buttonText == "Pay Credit Card Bills"){
+        ans = true;
+        history.push("/Bills",{choose:true});
+    }
+    else if(props.buttonText == "Pay Bills"){
+      ans = true;
+      history.push("/Bills",{choose:false});
+    }
+  }
+    
+
   }
 
     return (  

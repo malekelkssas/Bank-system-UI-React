@@ -2,9 +2,6 @@ import { useHistory } from "react-router-dom";
 import { useEffect } from "react";
 const Form = (props) => {
 
-    useEffect(()=>{
-        console.log(props.fourth);
-    });
     const history = useHistory();
     const handleSubmit = () => {
         history.push('/'+props.fourth);

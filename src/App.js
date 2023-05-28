@@ -7,6 +7,7 @@ import Main from "./mainPage/main";
 import MainForms from "./mainPage/components/mainPageForms";
 import View from "./mainPage/components/view";
 import Points from "./mainPage/components/points";
+import Bills from "./mainPage/components/bills";
 import { useHistory } from "react-router-dom";
 import ContactUs from "./fixed/contact";
 
@@ -49,6 +50,10 @@ function App() {
 
             <Route exact path = '/Points'>
               <Points />
+            </Route>
+
+            <Route exact path = '/Bills'>
+              <Bills />
             </Route>
 
         </Switch>
