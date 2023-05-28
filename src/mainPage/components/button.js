@@ -48,12 +48,29 @@ const Button = (props) => {
 
   const history = useHistory();
   const setAction = () =>{
+    let ans = false;
     buttonData.map((button, index) => {
         if(button.buttonText == props.buttonText){
+          ans = true;
             history.push("/mainForms",{data: button.formFields,buttonValue:props.buttonText});
         }
     }
     );
+    if(!ans){
+      console.log("in the button");
+      if(props.buttonText == "View Account Transactions" || props.buttonText == "View Credit Card Transactions"){
+        ans = true;
+        history.push("/view");
+      }
+    }
+    
+    if(!ans){
+      if(props.buttonText == "Redeem Points for Cashback"){
+        ans = true;
+        history.push("/Points");
+      }
+    }
+
   }
 
     return (  

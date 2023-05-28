@@ -1,9 +1,9 @@
+import { useEffect } from "react";
 import Form from "./form";
 import { useHistory } from "react-router-dom";
 const Acount = (props) => {
-    const history = useHistory();
     return ( 
-        <Form first='Acount name' second="password" third="create acount" fourth={() => history.push('/') } />
+        <Form first={props.first} second={props.second} third={props.third} fourth={props.fourth} />
      );
 }
  
