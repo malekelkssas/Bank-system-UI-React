@@ -20,8 +20,6 @@ const Chatbot = (props) => {
     tmp.push({name:'user',mass:title})
     setTitle('');
     setFormData(tmp);
-    
-    console.log(formData,e.target.value);
   }
 
     return (  

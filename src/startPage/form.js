@@ -1,15 +1,18 @@
-import image1 from './image1.png'
-import image2 from './image2.png'
-import image3 from './image3.png'
-
+import { useHistory } from "react-router-dom";
+import { useEffect } from "react";
 const Form = (props) => {
+
+    const history = useHistory();
+    const handleSubmit = () => {
+        history.push('/'+props.fourth);
+    }
+
     return (
-        
-        
-    <div>
+
+    <div style={{paddingTop:"100px"}}>
             
         <div className="neon-border" style={{display:'flex'}}>
-        <form className="neon-border-inside" style={{zIndex:'1'}} onSubmit={() =>{}}>
+        <form className="neon-border-inside" style={{zIndex:'1'}}>
                 <label>{props.first}</label>
                 <input 
                     type="text"
@@ -21,23 +24,11 @@ const Form = (props) => {
                     required
                 >
                 </input>
-                <button onClick={props.fourth}>{props.third}</button>
+                <button onClick={handleSubmit}>{props.third}</button>
         </form>
             <div className="try2"></div>
                 
         </div>
-
-        <div className="container" style={{height:'300px'}}>
-            <div className="queue">
-                <img src={image1} alt="image1" />
-                <img src={image2} alt="image2" />
-                <img src={image3} alt="image3"/>
-            </div>
-        </div>
-
-
-
-
         </div>
             
      );
