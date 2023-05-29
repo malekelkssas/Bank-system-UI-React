@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: "Quicksand";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,h2{
+  color: #189AB4;
+  font-size: 30px;
+}
+
+header {
+  background-color: #0A2A5E;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-left: 70px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .container input[type="button"] {
+      width: 100%;
+      background-color: #189AB4;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .container input[type="button"]:hover {
+      background-color: #189AB4;
+    }
+
+    .container label {
+      font-weight: bold;
+      color: #189AB4;
+    }
+
+    .container p {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .container p a {
+      color: #189AB4;
+    }
+    footer{
+  background-color: #0A2A5E;
+  color: #7bd58e;
+  padding: 10px;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="#">
+            <img src="images/bank-logo.png" alt="Bank Logo">
+          </a>
+        </div>
+      </header>
+  <div class="container">
+    <h1>Registration</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="banknumber">Bank Account Number (if exists):</label>
+      <input type="text" id="bankNumber" name="banknumber">
+
+      <input type="button" onclick="register()" value="Register">
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 GUCB. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function register() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var email = document.getElementById("email").value;
+      var bankNumber = document.getElementById("bankNumber").value;
+
+      if (username && password && email) {
+        // All required fields are filled
+        alert("Registration successful!");
+        // Perform additional actions (e.g., form submission) if needed
+      } else {
+        alert("Please fill in all required fields.");
+      }
+    }
+  </script>
+</body>
+</html>

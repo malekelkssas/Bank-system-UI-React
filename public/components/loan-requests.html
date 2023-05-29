@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications</title>
+  <link rel="stylesheet" href="styles/support-style.css">
+  <style>
+    h3{
+      color:  #189AB4;
+    }
+    ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin: 0;
+  color: #666;
+}
+
+button.accept {
+  background-color: #4CAF50;
+}
+
+button.reject {
+  background-color: #f44336;
+}
+
+button.accept:hover {
+  background-color: #45a049;
+}
+
+button.reject:hover {
+  background-color: #d32f2f;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="banker-home.html">
+        <img src="images/bank-logo.png" alt="Bank Logo">
+      </a>
+    </div>
+    <nav class="navigation">
+      <div class="dropdown">
+        <a href="#">
+          <img src="images/account.png" alt="Support">
+          <span>My Account <i class="arrow right"></i></span>
+        </a>
+        <div class="dropdown-content">
+          <a href="banker-notifications.html">
+            <img src="images/notification.png" alt="Notifications"> <br>
+            <span>Notifications</span>
+          </a>
+          <a href="login.html">
+            <img src="images/logout.png" alt="Logout"> <br>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="banker-requests.html">
+            <img src="images/applications.png" alt="Requests">
+            <span>Applications <i class="arrow right"></i></span>
+          </a>
+        <div class="dropdown-content">
+          <a href="credit-card-requests.html">
+            <img src="images/credit-card.png" alt="Credit Card Request Image"> <br>
+            <span>Credit Card</span>
+          </a>
+          <a href="loan-requests.html">
+            <img src="images/loan.png" alt="Loan Request Image"> <br>
+            <span>Loan</span>
+          </a>
+          <a href="open-account-requests.html">
+            <img src="images/open-account.png" alt="Open Account Image"> <br>
+            <span>Open Account</span>
+          </a>
+          <a href="close-account-requests.html">
+            <img src="images/close-account.png" alt="Close Account Image"> <br>
+            <span>Close Account</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Your application list goes here -->
+  <ul>
+    <li>
+      <h3>Request from User#321</h3>
+      <div>
+            Name : Hello World 1 <br>
+            Account Num : 321 <br>
+            National id : 3992631293710 <br>
+            phone number : 01512973239 <br>
+      </div>
+      <p>Loan is for Personal usage</p>
+      <div>
+        <button class="accept" onclick="acceptApplication(this)">Accept</button>
+        <button class="reject" onclick="rejectApplication(this)">Reject</button>
+      </div>
+      
+    </li>
+    <li>
+        <h3>Request from User#654</h3>
+        <div>
+              Name : Hello World 2 <br>
+              Account Num : 654 <br>
+              National id : 1628374926372 <br>
+              phone number : 01137839265 <br>
+        </div>
+        <p>Loan is for Car</p>
+        <div>
+          <button class="accept" onclick="acceptApplication(this)">Accept</button>
+          <button class="reject" onclick="rejectApplication(this)">Reject</button>
+        </div>
+    </li>
+    <li>
+        <h3>Request from User#987</h3>
+      <div>
+            Name : Hello World 3 <br>
+            Account Num : 987 <br>
+            National id : 1963821696821 <br>
+            phone number : 01226743381 <br>
+      </div>
+      <p>Loan is for Car</p>
+      <div>
+        <button class="accept" onclick="acceptApplication(this)">Accept</button>
+        <button class="reject" onclick="rejectApplication(this)">Reject</button>
+      </div>
+    </li>
+  </ul>
+  <footer class="normal-footer">
+    <p>&copy; 2023 Banking App. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function acceptApplication(button) {
+        var confirmation = confirm("Application is accepted");
+        if (confirmation) {
+            var notificationItem = button.parentNode.parentNode;
+            notificationItem.parentNode.removeChild(notificationItem);
+        }
+    }
+    function rejectApplication(button) {
+        var confirmation = confirm("Application is rejected");
+        if (confirmation) {
+            var notificationItem = button.parentNode.parentNode;
+            notificationItem.parentNode.removeChild(notificationItem);
+        }
+    }
+  </script>
+</body>
+</html>

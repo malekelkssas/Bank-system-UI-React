@@ -3,11 +3,12 @@
 <head>
   <title>Bank Website</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-PfmMW1pTUEzGtuHNlsDij/1Zvr2Ib5Ck2FyE0hLkgcvV/tcPLISGMj2j8FvL8zK5" crossorigin="anonymous">
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="index.html">
+      <a href="banker-home.html">
         <img src="images/bank-logo.png" alt="Bank Logo">
       </a>
     </div>
@@ -18,17 +19,9 @@
           <span>My Account <i class="arrow right"></i></span>
         </a>
         <div class="dropdown-content">
-          <a href="redeem-points.html">
-            <img src="images/redeem-pints.png" alt="Redeem"> <br>
-            <span>Redeem</span>
-          </a>
-          <a href="notifications.html">
+          <a href="banker-notifications.html">
             <img src="images/notification.png" alt="Notifications"> <br>
             <span>Notifications</span>
-          </a>
-          <a href="set-reminders.html">
-            <img src="images/reminders.png" alt="Reminders"> <br>
-            <span>Reminders</span>
           </a>
           <a href="login.html">
             <img src="images/logout.png" alt="Logout"> <br>
@@ -37,51 +30,27 @@
         </div>
       </div>
       <div class="dropdown">
-        <a href="#">
-          <img src="images/open-account.png" alt="Services">
-          <span>Services <i class="arrow right"></i></span>
-        </a>
+        <a href="banker-requests.html">
+            <img src="images/applications.png" alt="Requests">
+            <span>Applications <i class="arrow right"></i></span>
+          </a>
         <div class="dropdown-content">
-          <div class="dropdown-transaction">
-            <a href="#">
-              <img src="images/applications.png"> <br>
-              Apply for <i class="sub-arrow right"></i>
-            </a>
-            <div class="nested-dropdown-content">
-              <a href="apply-credit-card.html">
-                <img src="images/credit-card.png" alt="Credit Card Image"> <br>
-                Credit Card</a>
-              <a href="apply-loan.html">
-                <img src="images/loan.png" alt="Loan Image"> <br>
-                Loan</a>
-            </div>
-          </div>
-          <a href="bank-accounts.html">
-            <img src="images/open-account.png"> <br>
-            My bank accounts</a>
-          <a href="view-account-transactions.html">
-            <img src="images/transaction.png"> <br>
-            Transactions</a>
-          <a href="transfer-money.html">
-            <img src="images/transfer-money.png"> <br>
-            Transfer Money</a>
-          <a href="pay-credit-card-bills.html">
-            <img src="images/bills.png"> <br>
-            Bills</a>
-        </div> 
-      </div>
-      <div class="dropdown">
-        <a href="#">
-          <img src="images/support.png" alt="Support">
-          <span>Support <i class="arrow right"></i></span>
-        </a>
-        <div class="dropdown-content">
-          <a href="report-issues.html">
-            <img src="images/technical-issue.png"> <br>
-            Technical issue</a>
-            <a href="report-credit-card.html">
-              <img src="images/credit-card-problem.png"> <br>
-              Credit Card Problem</a>
+          <a href="credit-card-requests.html">
+            <img src="images/credit-card.png" alt="Credit Card Request Image"> <br>
+            <span>Credit Card</span>
+          </a>
+          <a href="loan-requests.html">
+            <img src="images/loan.png" alt="Loan Request Image"> <br>
+            <span>Loan</span>
+          </a>
+          <a href="open-account-requests.html">
+            <img src="images/open-account.png" alt="Open Account Image"> <br>
+            <span>Open Account</span>
+          </a>
+          <a href="close-account-requests.html">
+            <img src="images/close-account.png" alt="Close Account Image"> <br>
+            <span>Close Account</span>
+          </a>
         </div>
       </div>
     </nav>
