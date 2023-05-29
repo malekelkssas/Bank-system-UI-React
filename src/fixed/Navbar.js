@@ -11,7 +11,9 @@ import Loan from '../images/loan.png';
 import Transaction from '../images/transaction.png';
 import TransferMoney from '../images/transfer-money.png';
 import Bills from '../images/bills.png';
-
+import support from '../images/support.png';
+import technicalIssu from '../images/technical-issue.png';
+import creditCardProb from '../images/credit-card-problem.png';
 
 const Navbar = (props) => {
 
@@ -64,7 +66,8 @@ const Navbar = (props) => {
                 </Link>
             </div>
         </div>
-        <div class="dropdown">
+
+        <div className="dropdown">
                 <Link to="#">
                     <div className="simage-container" style={{}}>
                         <img src={openAcount} alt="Services"/>
@@ -72,7 +75,7 @@ const Navbar = (props) => {
                     
                 </Link>
 
-                <div className="dropdown-content" style={{bottom:"-530px",right: "60px"}}>
+                <div className="dropdown-content" style={{bottom:"-380px",right: "60px"}}>
                     <div className="dropdown-transaction">
                         <Link to="#">
                             <img src={application} /> <br/>
@@ -110,6 +113,25 @@ const Navbar = (props) => {
 
                 </div>
             </div>
+
+            <div className="dropdown">
+                <Link to="#">
+                    <div className="timage-container">
+                        <img src={support} alt="Support"/>    
+                    </div>
+                </Link>
+            <div class="dropdown-content" style={{bottom:"-190px",right: "100px"}}>
+                <Link to="report-issues.html">
+                    <img src={technicalIssu}/> <br/>
+                    <span>Technical issue</span>
+                </Link>
+            <Link to="report-credit-card.html">
+              <img src={creditCardProb}/> <br/>
+              <span>Credit Card Problem</span>
+            </Link>
+        </div>
+
+        </div>
       </div>
 
       

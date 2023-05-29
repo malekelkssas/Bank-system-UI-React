@@ -597,7 +597,7 @@ padding:2px 0 0 0;
 .simage-container {
   position: fixed;
   bottom: 0;
-  right: 60px;
+  right: 70px;
   display: inline-block;
   margin-right: 10px;
   /* Add some spacing between the image and dropdown */
@@ -610,4 +610,41 @@ padding:2px 0 0 0;
   /* Adjust the size as needed */
 }
 
+.timage-container {
+  position: fixed;
+  bottom: 0;
+  right: 140px;
+  display: inline-block;
+  margin-right: 10px;
+  /* Add some spacing between the image and dropdown */
 
+}
+
+.timage-container img {
+  width: 50px;
+
+  /* Adjust the size as needed */
+}
+
+
+.dropdown-transaction:hover .nested-dropdown-content {
+  display: block;
+}
+
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-transaction:hover .nested-dropdown-content {
+  display: block;
+}
+
+.nested-dropdown-content a {
+  padding-left: 20px;
+}
