@@ -91,7 +91,7 @@ const Button = (props) => {
   }
   }
     return (  
-    <button className="custom-button" onClick={setAction}>
+    <button className="custom-button" >
       <span className="button-text">{props.buttonText}</span>
       <span className="button-arrow"></span>
     </button>

@@ -9,9 +9,9 @@ import View from "./mainPage/components/view";
 import Points from "./mainPage/components/points";
 import Bills from "./mainPage/components/bills";
 import Remind from "./mainPage/components/reminders";
-import { useHistory } from "react-router-dom";
+import TechnicalIssue from "./mainPage/components/technicalIssue";
+import CreditCardIssue from "./mainPage/components/creditCardIssue";
 import ContactUs from "./fixed/contact";
-import { useState } from "react";
 
 function App() {
   
@@ -41,7 +41,7 @@ function App() {
                  <Main />
             </Route>
 
-            <Route exact path = '/MainForms'>
+            <Route exact path = '/MainForms/:choice'>
               <MainForms />
             </Route>
 
@@ -61,10 +61,20 @@ function App() {
               <Remind />
             </Route>
 
+            <Route exact path = '/TechnicalIssue'>
+              <TechnicalIssue />
+            </Route>
+
+            <Route exact path = '/CreditCardIssue'>
+              <CreditCardIssue />
+            </Route>
+
         </Switch>
       
         <Chatbot />
+        <footer>
         <ContactUs />
+        </footer>
       </div>
     </Router>
   );

@@ -3,11 +3,8 @@ import { useState } from 'react';
 
 const Bills = () => {
 
-    const location = useLocation();
-    const { choose } = location.state;
     const [amountval, setAmount] = useState('');
     const [selected, setSelected] = useState('');
-    let billNumber = 3;
     const [billArr, setBill] = useState(
         [{
             Bill:'Bill1',
@@ -59,7 +56,7 @@ const Bills = () => {
         
                 <div className="blog-list">
                     <div className="blog-preview">
-                            <h2>{ "Bill"} </h2>
+                            <h2>{"Bill"} </h2>
                             <p  style={{paddingRight:"1000px"}}>{ "Amount" } </p>
                     </div>
                         {

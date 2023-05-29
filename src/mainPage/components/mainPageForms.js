@@ -2,20 +2,63 @@ import { useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import swal from 'sweetalert';
+import { useParams } from 'react-router-dom';
 
 const MainForms = (props) => {
     
     let numFileds = 0;
     let trues = [];
-    const location = useLocation();
-    const { data, buttonValue } = location.state;
+    const { choice } = useParams();
+    useEffect(()=>{
+        console.log(choice);
+    })
+
+    const buttonData = [
+    {
+      buttonText: "Open Account",
+      formFields: [
+        { label: "Name", type: "text" },
+        { label: "National ID", type: "text" },
+        { label: "Phone Number", type: "text" },
+        { label: "Date of Birth", type: "date" },
+        {label:"Address", type:"textfield"}, //may case error
+        {label:"Nationality", type:"text"},
+        {label:"Job Title", type:"text"},
+      ]
+    },
+    {
+      buttonText: "Apply for Credit Card",
+      formFields: [
+        { label: "Name", type: "text" },
+        { label: "Credit Card Number", type: "text" },
+        { label: "National ID", type: "text" },
+        { label: "Phone Number", type: "text" },
+      ]
+    },
+    {
+      buttonText: "Apply for Loan",
+      formFields: [
+        { label: "Name", type: "text" },
+        { label: "Bank Account Number", type: "text" },
+        { label: "National ID", type: "text" },
+        { label: "Phone Number", type: "text" },
+      ]
+    },
+    {
+      buttonText: "Transfer Money",
+      formFields: [
+        { label: "Bank Account Number", type: "text" },
+        { label: "Amount", type: "number" },
+    ]
+    },
+  ];
     const history = useHistory();
     useEffect(()=>{
         trues = [];
-        data.map((field, index) =>{
+        buttonData[choice].formFields.map((field, index) =>{
             numFileds++;
         }
-        )
+        );
        while(numFileds-- !=0){
         trues.push(false);
        }
@@ -23,7 +66,7 @@ const MainForms = (props) => {
     },[]);
 
     const intializePage = () =>{
-        return data.map((field, index) => (
+        return buttonData[choice].formFields.map((field, index) => (
         <div key={index} required>
       <label>{field.label}</label>
       <input type={field.type}  onChange={(e) => {      if(e.target.value.length==0)
@@ -44,7 +87,7 @@ const MainForms = (props) => {
             check = trues[i] & check;
         }
     if(check){
-        swal("Done!", buttonValue, "success");
+        swal("Done!", buttonData[choice].buttonText, "success");
         history.push("/Main");
     }
   };
@@ -54,7 +97,7 @@ const MainForms = (props) => {
          <div className="mainPageForm">
             <form action="">
                 {intializePage()}
-                <button onClick={handleButtonClick}>{buttonValue}</button>
+                <button onClick={handleButtonClick}>{buttonData[choice].buttonText}</button>
             </form>
         </div>
      );

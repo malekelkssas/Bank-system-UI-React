@@ -21,7 +21,6 @@ const Navbar = (props) => {
     
 
     const components = () =>{
-        console.log("here", location.pathname);
         if(location.pathname !== "/Main"){
             return (
                 <div className="links">
@@ -82,18 +81,18 @@ const Navbar = (props) => {
                             <span>Applications</span>
                         </Link>
                         <div className="nested-dropdown-content">
-                        <Link to="/mainForms">
+                        <Link to="/mainForms/1">
                             <img src={creditCard} alt="Credit Card Image"/> <br/>
                             <span>Credit Card</span>
                         </Link>
-                        <Link to="/mainForms">
+                        <Link to="/mainForms/2">
                             <img src={Loan} alt="Loan Image"/> <br/>
                             <span>Loan</span>
                         </Link>
                         </div>
                     </div>
                     
-                    <Link to={"/mainForms"}>
+                    <Link to={"/mainForms/0"}>
                         <img src={openAcount}/> <br/>
                         <span>My bank accounts</span>
                     </Link>
@@ -102,7 +101,7 @@ const Navbar = (props) => {
                         <span>Transactions</span>
                     </Link> 
 
-                    <Link to="/mainForms">
+                    <Link to="/mainForms/3">
                         <img src={TransferMoney}/> <br/>
                         <span>Transfer Money</span>
                     </Link>
@@ -120,12 +119,12 @@ const Navbar = (props) => {
                         <img src={support} alt="Support"/>    
                     </div>
                 </Link>
-            <div class="dropdown-content" style={{bottom:"-190px",right: "100px"}}>
-                <Link to="report-issues.html">
+            <div className="dropdown-content" style={{bottom:"-180px",right: "100px"}}>
+                <Link to="/TechnicalIssue">
                     <img src={technicalIssu}/> <br/>
                     <span>Technical issue</span>
                 </Link>
-            <Link to="report-credit-card.html">
+            <Link to="/CreditCardIssue">
               <img src={creditCardProb}/> <br/>
               <span>Credit Card Problem</span>
             </Link>
