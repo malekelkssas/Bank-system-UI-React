@@ -248,14 +248,40 @@ padding:2px 0 0 0;
   background-color: white;
   width: 80%;
 } */
-.contact-us {
+/* .contact-us {
   border-top: 2px solid blue;
   text-align: center;
   padding: 50px;
   background-color: white;
   width: 80%;
   margin: 30px auto;
+} */
+/* .contact-us {
+  border-top: 2px solid blue;
+  text-align: center;
+  padding: 50px;
+  background-color: transparent;
+  width: 80%;
+  margin: 30px auto 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.contact-us {
+  border-top: 2px solid blue;
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  width: 80%;
+  margin: 30px auto 0;
+  display: grid;
+  bottom: 0;
+  right: 0;
 }
+
+
 .social-media-list {
   display: flex;
   justify-content: center;
@@ -647,4 +673,121 @@ padding:2px 0 0 0;
 
 .nested-dropdown-content a {
   padding-left: 20px;
+}
+
+.main-content {
+  padding: 100px;
+}
+
+.box {
+  width: 500px;
+  margin-top: 50px;
+  margin-right: 100px;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  margin-bottom: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fff;
+  color: #0A2A5E;
+  float: left;
+}
+
+.box img {
+  max-width: 500px;
+}
+
+.card {
+  background-color: white;
+  width: 19em;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  margin-left: 0px;
+  transition: 0.7s ease;
+  float: left;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  text-align: center;
+  color: #0A2A5E;
+}
+
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info p {
+  font-size: 1.5em;
+}
+
+.contact .info a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.IssueForm {
+  padding-top: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.IssueForm label {
+  text-align: left;
+  font-weight: bold;
+  display: block;
+  color: #0756d4;
+  margin: 50px 0 0 0;
+}
+
+.IssueForm h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+
+.IssueForm textarea,
+.IssueForm select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.IssueForm button {
+  background: #4c00ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  height: 45px;
+  width: 110px;
+}
+
+
+.Isscontainer {
+  display: flex;
+  align-items: center;
+}
+
+.Isscontainer label {
+  margin-right: 10px;
+}
+
+.Isscontainer input {
+  align-items: center;
+  bottom: 10px;
+  right: 100px;
 }
