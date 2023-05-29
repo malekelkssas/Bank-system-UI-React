@@ -8,12 +8,13 @@ import MainForms from "./mainPage/components/mainPageForms";
 import View from "./mainPage/components/view";
 import Points from "./mainPage/components/points";
 import Bills from "./mainPage/components/bills";
+import Remind from "./mainPage/components/reminders";
 import { useHistory } from "react-router-dom";
 import ContactUs from "./fixed/contact";
+import { useState } from "react";
 
 function App() {
-
-  const history = useHistory();
+  
 
 
   return (
@@ -37,7 +38,7 @@ function App() {
           </Route>
 
           <Route exact path = '/Main'>
-              <Main />
+                 <Main />
             </Route>
 
             <Route exact path = '/MainForms'>
@@ -54,6 +55,10 @@ function App() {
 
             <Route exact path = '/Bills'>
               <Bills />
+            </Route>
+
+            <Route exact path = '/Remind'>
+              <Remind />
             </Route>
 
         </Switch>

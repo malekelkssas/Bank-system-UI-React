@@ -31,7 +31,6 @@ const Points = () => {
         tmp.push({points:complete(pointsInput),cachBack:"$10.00"});
         setpoints(tmp);
         setInpoints('');
-        console.log("here",pointsarr);
         };
     return ( 
         <div className="createPoints">

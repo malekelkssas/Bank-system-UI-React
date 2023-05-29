@@ -82,10 +82,14 @@ const Button = (props) => {
       history.push("/Bills",{choose:false});
     }
   }
+  if(!ans){
+    if(props.buttonText == "Set Reminders"){
+      history.push("/Remind");
+    }
     
 
   }
-
+  }
     return (  
     <button className="custom-button" onClick={setAction}>
       <span className="button-text">{props.buttonText}</span>

@@ -16,8 +16,7 @@ const MainForms = (props) => {
             numFileds++;
         }
         )
-       while(numFileds-- !=0)
-       {
+       while(numFileds-- !=0){
         trues.push(false);
        }
        console.log(trues);

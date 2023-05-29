@@ -512,3 +512,102 @@ padding:2px 0 0 0;
   cursor: pointer;
 }
 
+
+
+.Remin {
+  display: flex;
+  padding: 10px;
+  margin: 20px 0;
+  /* border-bottom: 1px solid black; */
+}
+
+.Remin:hover {
+  box-shadow: 1px 3px 5px rgb(0, 183, 255);
+}
+
+.Remin h2 {
+  font-size: 20px;
+  color: rgb(112, 216, 152);
+  margin: 0 0 0 30px;
+  /* margin-bottom: 10px;
+  margin-right: 150px;
+  margin-left: 50px; */
+}
+
+
+.blog-Remin p {
+  margin-left: auto;
+  /* margin-left: 210px; */
+  /* Add left margin between h2 and p */
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  bottom: -280px;
+    right: -30px;
+  background-color: #f9f9f9;
+  min-width: 10px; /* Adjust the width as needed */
+  max-width: 125px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 8px 12px; /* Adjust the padding as needed */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content img {
+  width: 30px;
+}
+
+.image-container {
+  position: fixed;
+  bottom: 0;
+    right: 0;
+  display: inline-block;
+  margin-right: 10px; /* Add some spacing between the image and dropdown */
+  
+}
+
+.image-container img {
+  width: 50px;
+  
+  /* Adjust the size as needed */
+}
+
+.simage-container {
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+  display: inline-block;
+  margin-right: 10px;
+  /* Add some spacing between the image and dropdown */
+
+}
+
+.simage-container img {
+  width: 50px;
+
+  /* Adjust the size as needed */
+}
+
+
