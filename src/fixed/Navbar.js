@@ -12,28 +12,110 @@ import Transaction from '../images/transaction.png';
 import TransferMoney from '../images/transfer-money.png';
 import Bills from '../images/bills.png';
 import support from '../images/support.png';
+import AddBanker from '../images/add-banker.png';
+import CloseAccount from '../images/close-account.png';
+import BankLogo from '../images/bank-logo.png';
+import Application from '../images/applications.png';
 import technicalIssu from '../images/technical-issue.png';
 import creditCardProb from '../images/credit-card-problem.png';
+import { useEffect, useState } from "react";
 
 const Navbar = (props) => {
 
     const location = useLocation();
-    
+    const [detLocation, setDetLocation] = useState(0);
+
+    useEffect(() => {
+        const storedDetLocation = localStorage.getItem('detLocation');
+        if (storedDetLocation) {
+            setDetLocation(parseInt(storedDetLocation));
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('detLocation', detLocation.toString());
+    }, [detLocation]);
+
+    useEffect(()=>{
+        if(location.pathname === "/Main")
+        {
+            setDetLocation(1);
+        }
+        else if (location.pathname === "/Admin"){
+            setDetLocation(2);
+        }
+        else if (location.pathname === "/Banker"){
+            setDetLocation(0);
+        }
+        else if(location.pathname === "/"){
+            setDetLocation(3);
+        }
+    },[location])
 
     const components = () =>{
-        if(location.pathname !== "/Main"){
+        if(detLocation == 0){
             return (
-                <div className="links">
-                <Link to='/Signin'>Sign in</Link>
-                <Link to="/Acount" style={{
-                    color:'white',
-                    backgroundColor:"#0A2A5E",
-                    borderRadius:'8px'
-                }}>New acount</Link>
+      <div className="disp">
+        <div className="dropdown" >
+                <Link to="#">
+                <div className="image-container">
+                <img src={Acountimg} alt="Support"/>
                 </div>
+            </Link>
+
+            <div className="dropdown-content" style={{bottom:"-140px",right: "-10px"}}>
+
+                <Link to="/Notifications">  {/* i do not make notifications yet */}
+                    <img src={Notification} alt="Notifications"/> <br/>
+                    <span>Notifications</span>
+                </Link>
+
+                <Link to="/">
+                    <img src={logOutImg} alt="Logout"/> <br/>
+                    <span>Logout</span>
+                </Link>
+                </div>
+        </div>
+
+        <div className="dropdown" >
+                <Link to="/AddBanker">
+                <div className="image-container" style={{bottom:"0",right:"80px"}}>
+                <img src={Application} alt="Support"/>
+                </div>
+            </Link>
+            <div className="dropdown-content" style={{bottom:"-320px",right: "60px"}}>
+
+                
+                        <Link to="/CredirCardAccept">
+                            <img src={creditCard} alt="Credit Card Image"/> <br/>
+                            <span>Credit Card</span>
+                        </Link>
+                    
+                    <Link to="/LoanAccept">
+                            <img src={Loan} alt="Loan Image"/> <br/>
+                            <span>Loan</span>
+                        </Link>
+                    
+                    <Link to='/OpenBankAcount'>
+                        <img src={openAcount}/> <br/>
+                        <span>Open Acount</span>
+                    </Link>
+
+                    <Link to={'/CloseBankAcountbank'}>
+                        <img src={CloseAccount}/> <br/>
+                        <span>Close Acount</span>
+                    </Link>
+
+                         
+            
+            </div>
+        </div>
+
+      </div>
             );
         }
-        else{
+
+        else if (detLocation == 1){
             return (
       <div className="disp">
       <div className="dropdown">
@@ -49,7 +131,7 @@ const Navbar = (props) => {
                     <span>Redeem</span>
                 </Link>
 
-                <Link to="">  {/* i do not make notifications yet */}
+                <Link to="/UserNotifications">  
                     <img src={Notification} alt="Notifications"/> <br/>
                     <span>Notifications</span>
                 </Link>
@@ -92,7 +174,7 @@ const Navbar = (props) => {
                         </div>
                     </div>
                     
-                    <Link to={"/mainForms/0"}>
+                    <Link to={'/FakeNoti/0'}>
                         <img src={openAcount}/> <br/>
                         <span>My bank accounts</span>
                     </Link>
@@ -136,12 +218,62 @@ const Navbar = (props) => {
       
             );
         }
+
+
+        else if (detLocation == 2)
+        {
+            return (
+      <div className="disp">
+        <div className="dropdown" >
+                <Link to="#">
+                <div className="image-container">
+                <img src={Acountimg} alt="Support"/>
+                </div>
+            </Link>
+
+            <div className="dropdown-content" style={{bottom:"-140px",right: "-10px"}}>
+
+                <Link to="/AdminNotification">  
+                    <img src={Notification} alt="Notifications"/> <br/>
+                    <span>Notifications</span>
+                </Link>
+
+                <Link to="/">
+                    <img src={logOutImg} alt="Logout"/> <br/>
+                    <span>Logout</span>
+                </Link>
+                </div>
+        </div>
+
+        <div className="dropdown" >
+                <Link to="/AddBanker">
+                <div className="image-container" style={{bottom:"0",right:"80px"}}>
+                <img src={AddBanker} alt="Support"/>
+                </div>
+            </Link>
+        </div>
+
+      </div>
+            );
+        }
+        else if (detLocation == 3){
+             return (
+                <div className="links">
+                <Link to='/Signin'>Sign in</Link>
+                <Link to="/Acount" style={{
+                    color:'white',
+                    backgroundColor:"#0A2A5E",
+                    borderRadius:'8px'
+                }}>New acount</Link>
+                </div>
+            );
+        }
     }
 
     return ( 
         <nav className="navbar">
-            <h1>Welcome</h1>
-                {components(location.pathname)}
+            <img src={BankLogo} alt="BankLogo" style={{width:"20%",height:"20%"}}/>
+                {components()}
         </nav>
      );
 }

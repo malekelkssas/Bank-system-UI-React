@@ -2,19 +2,19 @@ import { useState } from "react";
 
 const Reminders = () => {
 
-    const [remin, setRemin] = useState();
+    const [remin, setRemin] = useState("Water Bill");
     const [data, setDate] = useState();
 
     const [rem, setrem] = useState([
         {
-            remind:"Buy groceries",
+            remind:"gas bills",
             dat:"2023-05-21"
         },
         {
-            remind:"Pay bills",
+            remind:"water bills",
             dat:"2023-04-1"
         },{
-            remind:"Meeting with clients",
+            remind:"electricity",
             dat:"2020-10-1"
         },
     ])
@@ -32,12 +32,13 @@ const Reminders = () => {
         <div className="createPoints">
                 <form  onSubmit={handlesubmit}>
                 <label>Reminder</label>
-                <input 
-                    type="text"
-                    placeholder="Enter a reminder"
-                    onChange={(e)=>setRemin(e.target.value)}
-                    required
-                />
+                <select id="bill-select" name="bill-select" onChange={e => setRemin(e.target.value)}>
+                    <option value="Water Bill">Water Bill</option>
+                    <option value="Electricity Bill">Electricity Bill</option>
+                    <option value="Phone Bill">Phone Bill</option>
+                    <option value="gas Bill">gas Bill</option>
+                </select>
+                
 
                 <label>Date</label>
                 <input 

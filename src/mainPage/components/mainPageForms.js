@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useHistory } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
 import swal from 'sweetalert';
 import { useParams } from 'react-router-dom';
 
@@ -40,6 +39,7 @@ const MainForms = (props) => {
       formFields: [
         { label: "Name", type: "text" },
         { label: "Bank Account Number", type: "text" },
+        { label: "what is the loan for", type: "text" },
         { label: "National ID", type: "text" },
         { label: "Phone Number", type: "text" },
       ]
@@ -66,6 +66,7 @@ const MainForms = (props) => {
     },[]);
 
     const intializePage = () =>{
+
         return buttonData[choice].formFields.map((field, index) => (
         <div key={index} required>
       <label>{field.label}</label>
@@ -91,12 +92,27 @@ const MainForms = (props) => {
         history.push("/Main");
     }
   };
+  const Selection = ()=>{
+    if(choice == 2)
+    {
+    return(
+          <>
+          <label>what is loan for</label>
+                <select id="bill-select" name="bill-select">
+                    <option value="bill-1">Personal</option>
+                    <option value="bill-2">car</option>
+                </select>
+          </>
+    );
+    }
+  };
 
 
     return ( 
          <div className="mainPageForm">
             <form action="">
                 {intializePage()}
+                {Selection()}
                 <button onClick={handleButtonClick}>{buttonData[choice].buttonText}</button>
             </form>
         </div>

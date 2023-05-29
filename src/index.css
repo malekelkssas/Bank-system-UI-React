@@ -791,3 +791,120 @@ padding:2px 0 0 0;
   bottom: 10px;
   right: 100px;
 }
+
+.bank-accounts button {
+  background-color: #0A2A5E;
+  color: #7bd58e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.bank-accounts button:hover {
+  background-color: #0D5D9C;
+}
+
+.bank-accounts {
+  margin-top: 20px;
+}
+
+.bank-accounts h2 {
+  font-size: 1.2em;
+  color: #7bd58e;
+  margin-left: 70px;
+}
+
+.bank-accounts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bank-accounts li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.bank-accounts li button {
+  color: red;
+}
+
+.bank-accounts h3 {
+  margin-top: 0;
+  color: #555;
+  margin-left: 70px;
+}
+
+.bank-accounts p {
+  margin: 5px 0;
+  color: #777;
+  margin-left: 70px;
+}
+
+
+
+
+/* ---------------- */
+
+.blog-details article {
+  width: 100%;
+  padding: 0px auto;
+}
+
+.blog-details article{
+  width: 100%;
+  padding: 0px auto;
+}
+
+.blog-details h2 {
+  display: grid;
+  justify-items: center;
+  font-size: 20px;
+  color: #75E6DA;
+  /* margin-bottom: 10px; */
+}
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details button {
+  /* width: 10%; */
+  background: #189AB4;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  bottom: 0px;
+  right:  100px;
+}
+
+
+.blog-preview-new {
+  width: 800px;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center;
+  /* border-bottom: 1px solid black; */
+}
+
+.blog-preview-new:hover {
+  box-shadow: 1px 3px 5px rgb(0, 183, 255);
+}
+
+.blog-preview-new h2 {
+  font-size: 20px;
+  color: rgb(112, 216, 152);
+  margin: 0 0 0 30px;
+  /* margin-bottom: 10px;
+  margin-right: 150px;
+  margin-left: 50px; */
+}
+

@@ -1,9 +1,23 @@
 import { useHistory } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Form = (props) => {
+
+    const [admin,setAdmin]= useState('');
+    
 
     const history = useHistory();
     const handleSubmit = () => {
+        if(props.first === "user name"){
+            if(admin === 'admin'){
+                history.push('/Admin');
+            }
+            else if(admin === 'banker'){
+                history.push('/Banker');
+            }
+            else
+        history.push('/'+props.fourth);
+        }
+        else
         history.push('/'+props.fourth);
     }
 
@@ -16,6 +30,7 @@ const Form = (props) => {
                 <label>{props.first}</label>
                 <input 
                     type="text"
+                    onChange={e=> setAdmin(e.target.value)}
                     required
                 />
                 <label>{props.second}</label>

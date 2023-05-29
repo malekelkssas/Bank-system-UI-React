@@ -13,7 +13,7 @@ const CreditCardIssue = () => {
     }
     return ( 
     <div className="mainPageForm">
-        <form>
+        <form style={{marginTop:"40px"}}>
             <div className='Isscontainer'>
                 <label >Credit Card was lost</label>
                 <input type="radio" id="lost" name="issue" value="Credit Card was lost"/>
