@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications</title>
+  <link rel="stylesheet" href="styles/support-style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="admin-home.html">
+            <img src="images/bank-logo.png" alt="Bank Logo">
+          </a>
+        </div>
+        <nav class="navigation">
+          <div class="dropdown">
+            <a href="#">
+              <img src="images/account.png" alt="Support">
+              <span>My Account</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="admin-notifications.html">
+                <img src="images/notification.png" alt="Notifications"> <br>
+                <span>Notifications</span>
+              </a>
+              <a href="">
+                <img src="images/logout.png" alt="Logout"> <br>
+                <span>Logout</span>
+              </a>
+            </div>
+          </div>
+            <a href="register-banker.html">
+              <img src="images/add-banker.png" alt="Services">
+              <span>Add A Banker</span>
+            </a>
+        </nav>
+      </header>
+  <!-- Your notification list goes here -->
+  <ul class="admin-notification">
+    <li>
+      <h3>Issue from User#123</h3>
+      <p>Money Transfer fails everytime</p>
+      <button onclick="resolveNotification(this)">Resolved</button>
+    </li>
+    <li>
+      <h3>Issue from User#456</h3>
+      <p>My gas bills were 100$ but the system removes 1000$ from my account !!</p>
+      <button onclick="resolveNotification(this)">Resolved</button>
+    </li>
+    <li>
+        <h3>Issue from User#789</h3>
+        <p>A7la Mesa 3alik</p>
+        <button onclick="resolveNotification(this)">Resolved</button>
+    </li>
+  </ul>
+  <footer class="normal-footer">
+    <p>&copy; 2023 Banking App. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function resolveNotification(button) {
+      var confirmation = confirm("Are you sure the issue is resolved?");
+      if (confirmation) {
+        var notificationItem = button.parentNode;
+        notificationItem.parentNode.removeChild(notificationItem);
+      }
+    }
+  </script>
+</body>
+</html>
