@@ -186,3 +186,58 @@ footer{
   height: 32px; /* Adjust the height to your desired size */
   margin-right: 5px; /* Add some margin to separate the icon from the text */
 }
+
+.bank-accounts button {
+  background-color: #0A2A5E;
+  color: #7bd58e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.bank-accounts button:hover {
+  background-color: #0D5D9C;
+}
+
+.bank-accounts {
+  margin-top: 20px;
+}
+
+.bank-accounts h2 {
+  font-size: 1.2em;
+  color: #7bd58e;
+  margin-left: 70px;
+}
+
+.bank-accounts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bank-accounts li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.bank-accounts li button{
+  color: red;
+}
+
+.bank-accounts h3 {
+  margin-top: 0;
+  color: #555;
+  margin-left: 70px;
+}
+
+.bank-accounts p {
+  margin: 5px 0;
+  color: #777;
+  margin-left: 70px;
+}

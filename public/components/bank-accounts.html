@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Bank Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Issues</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -86,48 +88,24 @@
       </div>
     </nav>
   </header>
-
-  <div class="main-content">
-    <h1>About GUCB</h1>
-    <div class="box">
-      <img src="images/smile.jpg" alt="Image of GUCB">
-      <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
-    </div>
-
-    <div class="box">
-      <img src="images/bank-office.jpg" alt="Image of GUCB">
-      <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
-    </div>
-
-    <section class="cards contact" id="contact">
-      <h2 class="title">Contact Information</h2>
-      <div class="content">
-          <div class="card">
-                <div class="info">
-                  <img src="images/mail.png">
-                <h3> Email</h3>
-                <a href="mailto:info@GUCB.com.eg"><p>info@GUCB.com.eg</p></a>
-                </div>
-          </div>
-          <div class="card">
-              <div class="info">
-                <img src="images/phone.png">
-              <h3> Phone</h3>
-              <a href="tel:11942"><p>11942</p></a>
-              </div>
-          </div>  
-
-          <div class="card">
-            <div class="info">
-              <img src="images/address.png">
-            <h3>Head Office</h3>
-            <p>5th Settlement, Cairo</p>
-            </div>
-        </div> 
-          </div>
-  </section>
+  <!-- Your dummy bank accounts goes here -->
+  <div class="bank-accounts">
+    <ul>
+      <li>
+        <h3>Account Number: 123456789</h3>
+        <p>Deposits: $1000</p>
+        <p>Account Type: Savings</p>
+        <button onclick="window.location.href='close-bank-account.html'">Close Account</button>
+      </li>
+      <li>
+        <h3>Account Number: 987654321</h3>
+        <p>Deposits: $500</p>
+        <p>Account Type: Checking</p>
+        <button onclick="window.location.href='close-bank-account.html'">Close Account</button>
+      </li>
+    </ul>
+    <button onclick="window.location.href='open-account.html'">Open A New Account</button>
   </div>
-
   <footer>
     <p>&copy; 2023 GUCB. All rights reserved.</p>
   </footer>
