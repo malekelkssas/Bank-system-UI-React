@@ -6,7 +6,7 @@ const Form = (props) => {
     
 
     const history = useHistory();
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         if(props.first === "user name"){
             if(admin === 'admin'){
                 history.push('/Admin');
@@ -26,20 +26,20 @@ const Form = (props) => {
     <div style={{paddingTop:"100px"}}>
             
         <div className="neon-border" style={{display:'flex'}}>
-        <form className="neon-border-inside" style={{zIndex:'1'}}>
+        <form className="neon-border-inside" style={{zIndex:'1'}} onSubmit={handleSubmit}>
                 <label>{props.first}</label>
                 <input 
                     type="text"
-                    onChange={e=> setAdmin(e.target.value)}
                     required
+                    onChange={e=> setAdmin(e.target.value)}
                 />
                 <label>{props.second}</label>
                 <input 
                 type="password"
-                    required
+                required
                 >
                 </input>
-                <button onClick={handleSubmit}>{props.third}</button>
+                <button>{props.third}</button>
         </form>
             <div className="try2"></div>
                 

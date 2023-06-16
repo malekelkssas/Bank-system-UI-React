@@ -1,8 +1,7 @@
 import Navbar from "./fixed/Navbar";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Chatbot from "./fixed/chatbot";
-import Acount from "./startPage/Acount";
-import Signin from "./startPage/signin";
+import Form from "./startPage/form"
 import Main from "./mainPage/main";
 import Admin from "./mainPage/admin";
 import Banker from "./mainPage/banker";
@@ -39,15 +38,15 @@ function App() {
         <Switch>
 
           <Route exact path='/'>
-            <Signin first='user name' second="password" third="log in" fourth="Main" />
+            <Form first='user name' second="password" third="log in" fourth="Main" />
           </Route>
 
           <Route exact path='/Acount'>
-            <Acount first='Acount name' second="password" third="create acount" fourth="" />
+            <Form first='Acount name' second="password" third="create acount" fourth="" />
           </Route>
       
           <Route exact path='/Signin'>
-            <Signin first='Email' second="password" third="sign in" fourth=""/>
+            <Form first='Email' second="password" third="sign in" fourth="" />
           </Route>
 
           <Route exact path = '/Main'>

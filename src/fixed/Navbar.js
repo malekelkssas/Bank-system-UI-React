@@ -24,7 +24,8 @@ const Navbar = (props) => {
 
     const location = useLocation();
 
-    const [detLocation, setDetLocation] = useState(0);
+    const [detLocation, setDetLocation] = useState(3);
+    const [lolink, setLink] = useState("/");
 
     useEffect(() => {
         const storedDetLocation = localStorage.getItem('detLocation');
@@ -41,15 +42,19 @@ const Navbar = (props) => {
         if(location.pathname === "/Main")
         {
             setDetLocation(1);
+            setLink("/Main");
         }
         else if (location.pathname === "/Admin"){
             setDetLocation(2);
+            setLink("/Admin");
         }
         else if (location.pathname === "/Banker"){
             setDetLocation(0);
+            setLink("/Banker");
         }
         else if(location.pathname === "/"){
             setDetLocation(3);
+            setLink("/");
         }
     },[location])
 
@@ -79,7 +84,7 @@ const Navbar = (props) => {
         </div>
 
         <div className="dropdown" >
-                <Link to="/AddBanker">
+                <Link to="#">
                 <div className="image-container" >
                 <img src={Application} alt="Support"/>
                 </div>
@@ -273,7 +278,7 @@ const Navbar = (props) => {
 
     return ( 
         <nav className="navbar">
-            <Link to="/Main"  style={{width:"100%",height:"100%"}}>
+            <Link to={lolink}  style={{width:"100%",height:"100%"}}>
             <div className="image-container">
                 <img src={BankLogo} alt="BankLogo" style={{width:"60%",height:"60%"}}/>
             </div>
