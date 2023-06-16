@@ -259,7 +259,7 @@ const Navbar = (props) => {
         }
         else if (detLocation == 3){
              return (
-                <div className="links">
+                <div className="disp" >
                 <Link to='/Signin'>Sign in</Link>
                 <Link to="/Acount" style={{
                     color:'white',
@@ -273,8 +273,10 @@ const Navbar = (props) => {
 
     return ( 
         <nav className="navbar">
-            <Link to="/Main" style={{width:"100%",height:"100%"}}>
-            <img src={BankLogo} alt="BankLogo" style={{width:"100%",height:"100%"}}/>
+            <Link to="/Main"  style={{width:"100%",height:"100%"}}>
+            <div className="image-container">
+                <img src={BankLogo} alt="BankLogo" style={{width:"60%",height:"60%"}}/>
+            </div>
             </Link>
                 {components()}
         </nav>
