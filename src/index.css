@@ -8,46 +8,12 @@
 }
 
 .App{
+  position: relative;
+  display: block;
   background-color: white;
 }
 
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #0A2A5E;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  background-color: transparent;
-  z-index: 999;
-  /* Optional: Set a higher value if needed */
-}
 
-.navbar h1 {
-  color: #0756d4;
-}
-
-.navbar .links {
-  margin-left: auto;
-}
-
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-  color: #ddd;
-}
-
-
-
-.navbar a:hover {
-  color: #9DC3E6;
-}
 
 
 
@@ -237,74 +203,9 @@ padding:2px 0 0 0;
   
 }
 
-/* .contact-us {
-  border-top: 2px solid blue;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  width: 80%;
-} */
-/* .contact-us {
-  border-top: 2px solid blue;
-  text-align: center;
-  padding: 50px;
-  background-color: white;
-  width: 80%;
-  margin: 30px auto;
-} */
-/* .contact-us {
-  border-top: 2px solid blue;
-  text-align: center;
-  padding: 50px;
-  background-color: transparent;
-  width: 80%;
-  margin: 30px auto 0;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
-.contact-us {
-  border-top: 2px solid blue;
-  text-align: center;
-  padding: 50px;
-  background-color: white;
-  width: 80%;
-  margin: 30px auto 0;
-  display: grid;
-  bottom: 0;
-  right: 0;
-}
 
 
-.social-media-list {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
 
-.social-media-list li {
-  margin-right: 20px;
-}
-
-.social-media-list li:last-child {
-  margin-right: 0;
-}
-
-.social-media-list a {
-  color: blue;
-}
-
-.social-media-list i {
-  font-size: 24px;
-}
 
 .custom-button {
   display: flex;
@@ -568,169 +469,6 @@ padding:2px 0 0 0;
 }
 
 
-.dropdown {
-  position: relative;
-}
-
-
-
-.dropdown-content {
-  display: none;
-  position: fixed;
-  bottom: -280px;
-    right: -30px;
-  background-color: #f9f9f9;
-  min-width: 10px; /* Adjust the width as needed */
-  max-width: 125px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: #333;
-  padding: 8px 12px; /* Adjust the padding as needed */
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown-content img {
-  width: 30px;
-}
-
-.image-container {
-  position: fixed;
-  bottom: 0;
-    right: 0;
-  display: inline-block;
-  margin-right: 10px; /* Add some spacing between the image and dropdown */
-  
-}
-
-.image-container img {
-  width: 50px;
-  
-  /* Adjust the size as needed */
-}
-
-.simage-container {
-  position: fixed;
-  bottom: 0;
-  right: 70px;
-  display: inline-block;
-  margin-right: 10px;
-  /* Add some spacing between the image and dropdown */
-
-}
-
-.simage-container img {
-  width: 50px;
-
-  /* Adjust the size as needed */
-}
-
-.timage-container {
-  position: fixed;
-  bottom: 0;
-  right: 140px;
-  display: inline-block;
-  margin-right: 10px;
-  /* Add some spacing between the image and dropdown */
-
-}
-
-.timage-container img {
-  width: 50px;
-
-  /* Adjust the size as needed */
-}
-
-
-.dropdown-transaction:hover .nested-dropdown-content {
-  display: block;
-}
-
-.nested-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  left: 100%;
-  top: 0;
-}
-
-.dropdown-transaction:hover .nested-dropdown-content {
-  display: block;
-}
-
-.nested-dropdown-content a {
-  padding-left: 20px;
-}
-
-.main-content {
-  padding: 100px;
-}
-
-.box {
-  width: 500px;
-  margin-top: 50px;
-  margin-right: 100px;
-  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
-  margin-bottom: 100px;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px;
-  background-color: #fff;
-  color: #0A2A5E;
-  float: left;
-}
-
-.box img {
-  max-width: 500px;
-}
-
-.card {
-  background-color: white;
-  width: 19em;
-  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
-  border-radius: 10px;
-  padding: 25px;
-  margin: 15px;
-  margin-left: 0px;
-  transition: 0.7s ease;
-  float: left;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.info {
-  text-align: center;
-  color: #0A2A5E;
-}
-
-.contact .icon {
-  font-size: 4.5em;
-}
-
-.contact .info p {
-  font-size: 1.5em;
-}
-
-.contact .info a {
-  text-decoration: none;
-  color: black;
-}
-
 
 .IssueForm {
   padding-top: 50px;
@@ -903,8 +641,248 @@ padding:2px 0 0 0;
   font-size: 20px;
   color: rgb(112, 216, 152);
   margin: 0 0 0 30px;
-  /* margin-bottom: 10px;
-  margin-right: 150px;
-  margin-left: 50px; */
 }
 
+
+
+
+
+
+
+/* ----------------------      NavBar         -----------------*/
+
+.navbar {
+  display: inline-flex;
+  position: relative;
+
+  height: 5%;
+  max-width: 100%;
+  width: 50%;
+
+
+  margin-left: 50%;
+  margin-right: 10%;
+  padding-right: 30%;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid #0A2A5E;
+  transform: translateX(-50%);
+  background-color: transparent;
+  z-index: 999;
+}
+
+.navbar h1 {
+  color: #0756d4;
+}
+
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #ddd;
+}
+
+
+
+.navbar a:hover {
+  color: #9DC3E6;
+}
+
+.disp{
+  display: inline-flex;
+  margin-left: 45%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  max-width: 125px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 8px 12px;
+  /* Adjust the padding as needed */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content img {
+  width: 30px;
+}
+
+.nested-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-transaction:hover .nested-dropdown-content {
+  display: block;
+}
+
+.dropdown-transaction:hover .nested-dropdown-content {
+  display: block;
+}
+
+.nested-dropdown-content a {
+  padding-left: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-flex;
+}
+
+.image-container img {
+  width: 50px;
+}
+
+/* ----------------    Main    --------------- */
+
+.main-content {
+  position: relative;
+  margin-left: 20%;
+  height: 85%;
+  max-width: 60%;
+  width: 100%;
+}
+
+.h1cl {
+  text-align: center;
+  margin-top: 5%
+}
+
+.inlineFlex {
+  display: inline-flex;
+  width: 100%;
+}
+
+.box {
+  width: 50%;
+  padding: 5%;
+  
+  margin: 5%;
+  margin-top: 50px;
+  
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  
+  border: 1px solid black;
+  border-radius: 20px;
+  
+  background-color: #fff;
+  color: #0A2A5E;
+}
+
+.box img {
+  width: 100%;
+}
+
+.cards-contact {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  width: 19em;
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  margin-left: 0px;
+  transition: 0.7s ease;
+  float: left;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.info {
+  text-align: center;
+  color: #0A2A5E;
+}
+
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info p {
+  font-size: 1.5em;
+}
+
+.contact .info a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------     contact     ------------------- */
+
+.contact-us {
+  display: block;
+
+  border-top: 2px solid blue;
+  text-align: center;
+  padding: 50px;
+
+  height: 15%;
+  width: 100%;
+  margin: 30px auto 0;
+
+  background-color: white;
+  max-width: 80%;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media-list li {
+  margin-right: 20px;
+}
+
+.social-media-list li:last-child {
+  margin-right: 0;
+}
+
+.social-media-list a {
+  color: blue;
+}
+
+.social-media-list i {
+  font-size: 24px;
+}

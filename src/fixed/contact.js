@@ -3,7 +3,7 @@ import twitter from "../images/twitter.png"
 import instgram from "../images/instgram.png"
 const ContactUs = () => {
   return (
-    <div className="contact-us">
+    <footer className="contact-us">
       <h2>Contact Us</h2>
       <p>Phone: (123) 456-7890</p>
       <p>Social Media Channels:</p>
@@ -24,7 +24,7 @@ const ContactUs = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }
 

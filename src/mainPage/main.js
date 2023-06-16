@@ -30,25 +30,26 @@ function Main (){
 
 return (
     <div className="main-content">
-    <h1>About GUCB</h1>
-    <div className="box">
-      <img src={Smile} alt="Image of GUCB" />
-      <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
-    </div>
+      <h1 className="h1cl">About GUCB</h1>
+        <div className="inlineFlex">
+          <div className="box">
+            <img src={Smile} alt="Image of GUCB" />
+            <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
+          </div>
 
-    <div className="box">
-      <img src={BankOffine} alt="Image of GUCB" />
-      <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
-    </div>
+        <div className="box">
+            <img src={BankOffine} alt="Image of GUCB" />
+            <p>Welcome to our bank website! We are committed to providing excellent banking services to our customers. Whether you need assistance with managing your accounts, applying for loans, or making transactions, we've got you covered. Feel free to explore our website and discover the wide range of services we offer.</p>
+        </div>
+      </div>
 
-    <section className="cards contact" id="contact">
-      <h2 className="title">Contact Information</h2>
+    <section className="cards-contact" id="contact">
+      <h2 className="h1cl">Contact Information</h2>
       <div className="content">
           <div className="card">
                 <div className="info">
                   <img src={Mail} />
                 <h3> Email</h3>
-                {/* <a href="mailto:info@GUCB.com.eg"><p>info@GUCB.com.eg</p></a> */}
                 </div>
           </div>
           <div className="card">

@@ -134,9 +134,7 @@ function App() {
         </Switch>
       
         <Chatbot />
-        <footer>
         <ContactUs />
-        </footer>
       </div>
     </Router>
   );

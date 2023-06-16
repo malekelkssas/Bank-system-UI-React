@@ -23,6 +23,7 @@ import { useEffect, useState } from "react";
 const Navbar = (props) => {
 
     const location = useLocation();
+
     const [detLocation, setDetLocation] = useState(0);
 
     useEffect(() => {
@@ -63,7 +64,7 @@ const Navbar = (props) => {
                 </div>
             </Link>
 
-            <div className="dropdown-content" style={{bottom:"-140px",right: "-10px"}}>
+            <div className="dropdown-content" >
 
                 <Link to="/Notifications">  {/* i do not make notifications yet */}
                     <img src={Notification} alt="Notifications"/> <br/>
@@ -79,11 +80,11 @@ const Navbar = (props) => {
 
         <div className="dropdown" >
                 <Link to="/AddBanker">
-                <div className="image-container" style={{bottom:"0",right:"80px"}}>
+                <div className="image-container" >
                 <img src={Application} alt="Support"/>
                 </div>
             </Link>
-            <div className="dropdown-content" style={{bottom:"-320px",right: "60px"}}>
+            <div className="dropdown-content" >
 
                 
                         <Link to="/CredirCardAccept">
@@ -150,13 +151,13 @@ const Navbar = (props) => {
 
         <div className="dropdown">
                 <Link to="#">
-                    <div className="simage-container" style={{}}>
+                    <div className="image-container" >
                         <img src={openAcount} alt="Services"/>
                     </div>
                     
                 </Link>
 
-                <div className="dropdown-content" style={{bottom:"-380px",right: "60px"}}>
+                <div className="dropdown-content" >
                     <div className="dropdown-transaction">
                         <Link to="#">
                             <img src={application} /> <br/>
@@ -197,11 +198,11 @@ const Navbar = (props) => {
 
             <div className="dropdown">
                 <Link to="#">
-                    <div className="timage-container">
+                    <div className="image-container">
                         <img src={support} alt="Support"/>    
                     </div>
                 </Link>
-            <div className="dropdown-content" style={{bottom:"-180px",right: "100px"}}>
+            <div className="dropdown-content" >
                 <Link to="/TechnicalIssue">
                     <img src={technicalIssu}/> <br/>
                     <span>Technical issue</span>
@@ -231,7 +232,7 @@ const Navbar = (props) => {
                 </div>
             </Link>
 
-            <div className="dropdown-content" style={{bottom:"-140px",right: "-10px"}}>
+            <div className="dropdown-content" >
 
                 <Link to="/AdminNotification">  
                     <img src={Notification} alt="Notifications"/> <br/>
@@ -247,7 +248,7 @@ const Navbar = (props) => {
 
         <div className="dropdown" >
                 <Link to="/AddBanker">
-                <div className="image-container" style={{bottom:"0",right:"80px"}}>
+                <div className="image-container" >
                 <img src={AddBanker} alt="Support"/>
                 </div>
             </Link>
@@ -272,7 +273,9 @@ const Navbar = (props) => {
 
     return ( 
         <nav className="navbar">
-            <img src={BankLogo} alt="BankLogo" style={{width:"20%",height:"20%"}}/>
+            <Link to="/Main" style={{width:"100%",height:"100%"}}>
+            <img src={BankLogo} alt="BankLogo" style={{width:"100%",height:"100%"}}/>
+            </Link>
                 {components()}
         </nav>
      );
