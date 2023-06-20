@@ -35,7 +35,7 @@ const Navbar = (props) => {
     }, []);
 
     useEffect(() => {
-        localStorage.setItem('detLocation', detLocation.toString());
+        localStorage.setItem('detLocation', parseInt(detLocation.toString()));
     }, [detLocation]);
 
     useEffect(()=>{
@@ -59,7 +59,7 @@ const Navbar = (props) => {
     },[location])
 
     const components = () =>{
-        if(detLocation == 0){
+        if(detLocation === 0){
             return (
       <div className="disp">
         <div className="dropdown" >
@@ -93,22 +93,22 @@ const Navbar = (props) => {
 
                 
                         <Link to="/CredirCardAccept">
-                            <img src={creditCard} alt="Credit Card Image"/> <br/>
+                            <img src={creditCard} alt="Credit Card"/> <br/>
                             <span>Credit Card</span>
                         </Link>
                     
                     <Link to="/LoanAccept">
-                            <img src={Loan} alt="Loan Image"/> <br/>
+                            <img src={Loan} alt="Loan"/> <br/>
                             <span>Loan</span>
                         </Link>
                     
                     <Link to='/OpenBankAcount'>
-                        <img src={openAcount}/> <br/>
+                        <img src={openAcount} alt="openAcount"/> <br/>
                         <span>Open Acount</span>
                     </Link>
 
                     <Link to={'/CloseBankAcountbank'}>
-                        <img src={CloseAccount}/> <br/>
+                        <img src={CloseAccount} alt="closeAcount"/> <br/>
                         <span>Close Acount</span>
                     </Link>
 
@@ -121,7 +121,7 @@ const Navbar = (props) => {
             );
         }
 
-        else if (detLocation == 1){
+        else if (detLocation === 1){
             return (
       <div className="disp">
       <div className="dropdown">
@@ -165,36 +165,36 @@ const Navbar = (props) => {
                 <div className="dropdown-content" >
                     <div className="dropdown-transaction">
                         <Link to="#">
-                            <img src={application} /> <br/>
+                            <img src={application} alt="application" /> <br/>
                             <span>Applications</span>
                         </Link>
                         <div className="nested-dropdown-content">
                         <Link to="/mainForms/1">
-                            <img src={creditCard} alt="Credit Card Image"/> <br/>
+                            <img src={creditCard} alt="Credit Card"/> <br/>
                             <span>Credit Card</span>
                         </Link>
                         <Link to="/mainForms/2">
-                            <img src={Loan} alt="Loan Image"/> <br/>
+                            <img src={Loan} alt="Loan"/> <br/>
                             <span>Loan</span>
                         </Link>
                         </div>
                     </div>
                     
                     <Link to={'/FakeNoti/0'}>
-                        <img src={openAcount}/> <br/>
+                        <img src={openAcount} alt="openAcount"/> <br/>
                         <span>My bank accounts</span>
                     </Link>
                     <Link to={"/view"}>
-                        <img src={Transaction}/> <br/>
+                        <img src={Transaction} alt="Transaction"/> <br/>
                         <span>Transactions</span>
                     </Link> 
 
                     <Link to="/mainForms/3">
-                        <img src={TransferMoney}/> <br/>
+                        <img src={TransferMoney} alt="TransferMoney"/> <br/>
                         <span>Transfer Money</span>
                     </Link>
                     <Link to="/Bills">
-                        <img src={Bills}/> <br/>
+                        <img src={Bills} alt="Bills"/> <br/>
                         <span>Bills</span>
                     </Link> 
 
@@ -209,11 +209,11 @@ const Navbar = (props) => {
                 </Link>
             <div className="dropdown-content" >
                 <Link to="/TechnicalIssue">
-                    <img src={technicalIssu}/> <br/>
+                    <img src={technicalIssu} alt="technicalIssue"/> <br/>
                     <span>Technical issue</span>
                 </Link>
             <Link to="/CreditCardIssue">
-              <img src={creditCardProb}/> <br/>
+              <img src={creditCardProb} alt="creditCardProb"/> <br/>
               <span>Credit Card Problem</span>
             </Link>
         </div>
@@ -226,7 +226,7 @@ const Navbar = (props) => {
         }
 
 
-        else if (detLocation == 2)
+        else if (detLocation === 2)
         {
             return (
       <div className="disp">
@@ -262,7 +262,7 @@ const Navbar = (props) => {
       </div>
             );
         }
-        else if (detLocation == 3){
+        else if (detLocation === 3){
              return (
                 <div className="disp" >
                 <Link to='/Signin'>Sign in</Link>

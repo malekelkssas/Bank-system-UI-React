@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const Form = (props) => {
 
     const [admin,setAdmin]= useState('');
@@ -23,7 +23,7 @@ const Form = (props) => {
 
     return (
 
-    <div style={{paddingTop:"100px"}}>
+    <div >
             
         <div className="neon-border" style={{display:'flex'}}>
         <form className="neon-border-inside" style={{zIndex:'1'}} onSubmit={handleSubmit}>
@@ -41,7 +41,7 @@ const Form = (props) => {
                 </input>
                 <button>{props.third}</button>
         </form>
-            <div className="try2"></div>
+            
                 
         </div>
         </div>

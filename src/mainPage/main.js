@@ -56,7 +56,6 @@ return (
               <div className="info">
                 <img src={Phone} />
               <h3> Phone</h3>
-              {/* <a href="tel:11942"><p>11942</p></a> */}
               </div>
           </div>  
 

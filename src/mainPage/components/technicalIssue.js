@@ -13,11 +13,11 @@ const TechnicalIssue = () => {
     }
   
     return ( 
-        <div className="mainPageForm">
-        <form>
+        <div className="tech-Issue">
+        <form onSubmit={handleButtonClick}>
             <label >Issue</label>
             <textarea id="issue" name="issue" placeholder="Describe the issue"></textarea>
-            <button id="report-button" type="submit" onClick={handleButtonClick}>Report Issues</button>
+            <button >Report Issues</button>
         </form>
         </div>
      );

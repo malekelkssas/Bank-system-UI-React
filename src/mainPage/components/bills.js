@@ -54,21 +54,31 @@ const Bills = () => {
                 <button>Pay Bills</button>
             </form>
         
-                <div className="blog-list">
-                    <div className="blog-preview">
-                            <h2>{"Bill"} </h2>
-                            <p  style={{paddingRight:"1000px"}}>{ "Amount" } </p>
+                <div className="main-block">
+                    <div className="Remin">
+                        <div className="size-block">
+                                <h2 className="points-redeem-h2">{"Bill"} </h2>
+                        </div>
+                        <div className="size-block">
+                            <p  className="points-redeem-nor">{ "Amount" } </p>
+                        </div>
                     </div>
+                    
                         {
                             
                          billArr.map((item, index) =>(
-                            <div className="blog-preview" key={index}>
-                            <h2 style={{paddingRight:"25px"}}>{ item.Bill } </h2>
-                            <p style={{justifyItems:"end"}}>{ item.Amount } </p>
-                        </div>
+                            <div className="Remin" key={index}>
+                                <div className="size-block">
+                                    <h2 className="points-redeem-h2">{ item.Bill } </h2>
+                                </div>
+                                <div className="size-block">
+                                    <p className="points-redeem-nor">{ item.Amount } </p>
+                                </div>
+                            </div>
                             ) )
             
                         }
+                    
                 </div>
         </div>
      );

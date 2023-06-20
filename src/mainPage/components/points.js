@@ -18,23 +18,18 @@ const Points = () => {
         }]
     );
 
-    const complete = (str) =>{
-        while(str.length != 4){
-            str += " ";
-        }
-        return str;
-    }
+    
 
     const handlesubmit = (e) =>{
         e.preventDefault();
         let tmp = pointsarr;
-        tmp.push({points:complete(pointsInput),cachBack:"$10.00"});
+        tmp.push({points:pointsInput,cachBack:"$10.00"});
         setpoints(tmp);
         setInpoints('');
         };
     return ( 
         <div className="createPoints">
-        <form  onSubmit={handlesubmit}>
+            <form  onSubmit={handlesubmit}>
                 <label> Points</label>
                 <input 
                     type="number"
@@ -44,20 +39,29 @@ const Points = () => {
                 />
                 <button>Redeem Points</button>
             </form>
-            <div className="blog-list">
-                <div className="blog-preview">
-                        <h2>{ "points"} </h2>
-                        <p  style={{paddingRight:"1000px"}}>{ "Cashback Amount" } </p>
-                    </div>
+
+            <div className="points">
+                <div className="points-redeem">
+                        <div className="size-block">
+                            <h2 className="points-redeem-h2">{ "points"} </h2>
+                        </div>
+                        <div className="size-block">
+                            <h2 className="points-redeem-nor">{ "Cashback Amount" } </h2>
+                        </div>
+                </div>
             {
             pointsarr.map((item, index) =>(
-                    <div className="blog-preview" key={index}>
-                        <h2 style={{paddingRight:"25px"}}>{ item.points } </h2>
-                        <p style={{justifyItems:"end"}}>{ item.cachBack } </p>
+                    <div className="points-redeem" key={index}>
+                        <div className="size-block">
+                        <h2 className="points-redeem-h2">{ item.points } </h2>
+                        </div>
+                        <div className="size-block">
+                        <h2 className="points-redeem-nor">{ item.cachBack } </h2>
+                        </div>
                     </div>
                 ) )
             }
-        </div>
+            </div>
         </ div>
      );
 }

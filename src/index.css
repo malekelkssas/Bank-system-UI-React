@@ -4,13 +4,6 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  /* background-color: white; */
-}
-
-.App{
-  position: relative;
-  display: block;
-  background-color: white;
 }
 
 
@@ -19,75 +12,8 @@
 
 
 
-.neon-border {
-  max-width: 600px;
-  margin: 20px auto;
-  align-content: center;
-  border: 3px solid #0756d4;
-  border-radius: 5px;
-  box-shadow: 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 20px #0A2A5E;
-  
-}
 
-.try {
-  position: fixed;
-  bottom: 44px;
-  right: 20px;
-  width: 300px;
-  height: 300px;
-  background-image: url('../src/images/backgrounf_design.png');
-  background-repeat: no-repeat;
-  background-size: 300px 300px;
-  z-index: -1;
-  border-radius: 300px;
-  left: 120.99px;
-  top: 330.451px;
-}
 
-.neon-border input:hover ,button:hover  {
-  box-shadow: 1px 3px 5px rgb(0, 183, 255);
-}
-
-.neon-border-inside {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.neon-border-inside label {
-  text-align: left;
-  font-weight: bold;
-  display: block;
-  color: #0756d4;
-  margin: 50px 0 0 0;
-}
-
-.neon-border-inside h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
-}
-
-.neon-border-inside input,
-.neon-border-inside textarea,
-.neon-border-inside select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-
-.neon-border-inside button {
-  background: #4c00ff;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 20px 0 20px 0;
-}
 
 .chat-btn{
         position: fixed;
@@ -255,49 +181,7 @@ padding:2px 0 0 0;
   margin-left: 100px;
 }
 
-.mainPageForm {
-  padding-top:50px;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
 
-.mainPageForm label {
-  text-align: left;
-  font-weight: bold;
-  display: block;
-  color: #0756d4;
-  margin: 50px 0 0 0;
-}
-
-.mainPageForm h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
-}
-
-.mainPageForm input,
-.mainPageForm textarea,
-.mainPageForm select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-
-.mainPageForm button {
-  background: #4c00ff;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 20px 0 20px 0;
-  height: 45px;
-  width: 110px;
-}
 
 
 .transaction-table-container {
@@ -376,90 +260,13 @@ padding:2px 0 0 0;
   cursor: pointer;
 }
 
-.blog-preview {
-  display: flex;
-  padding: 10px;
-  margin: 20px 0;
-  /* border-bottom: 1px solid black; */
-}
-
-.blog-preview:hover {
-  box-shadow: 1px 3px 5px rgb(0, 183, 255);
-}
-
-.blog-preview h2 {
-  font-size: 20px;
-  color: rgb(112, 216, 152);
-  margin: 0 0 0 30px;
-  /* margin-bottom: 10px;
-  margin-right: 150px;
-  margin-left: 50px; */
-}
-
-.blog-preview p {
-  margin-left: 210px;
-  /* Add left margin between h2 and p */
-}
-
-.createPoints {
-  padding-top: 100px;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.createPoints label {
-  text-align: left;
-  display: block;
-}
-
-.createPoints h2 {
-  font-size: 20px;
-  color: #35f1a3;
-  margin-bottom: 30px;
-}
-
-.createPoints input,
-.createPoints textarea,
-.createPoints select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-
-.createPoints button {
-  background: #35b5f1;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
 
 
-.Remin {
-  display: flex;
-  padding: 10px;
-  margin: 20px 0;
-  /* border-bottom: 1px solid black; */
-}
 
-.Remin:hover {
-  box-shadow: 1px 3px 5px rgb(0, 183, 255);
-}
 
-.Remin h2 {
-  font-size: 20px;
-  color: rgb(112, 216, 152);
-  margin: 0 0 0 30px;
-  /* margin-bottom: 10px;
-  margin-right: 150px;
-  margin-left: 50px; */
-}
+
+
 
 
 .blog-Remin p {
@@ -644,7 +451,17 @@ padding:2px 0 0 0;
 }
 
 
+/* --------------------   App    --------------------- */
 
+.App {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  max-height: max-content;
+  height: 100%;
+  background-color: white;
+}
 
 
 
@@ -760,6 +577,64 @@ padding:2px 0 0 0;
 .image-container img {
   width: 50px;
 }
+
+/* ---------  startPage/form ---------------*/
+
+.neon-border {
+  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  align-content: center;
+  border: 3px solid #0756d4;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 1px #0A2A5E, 0 0 20px #0A2A5E;
+
+}
+
+
+.neon-border-inside {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.neon-border-inside label {
+  text-align: left;
+  font-weight: bold;
+  display: block;
+  color: #0756d4;
+  margin: 50px 0 0 0;
+}
+
+.neon-border-inside h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.neon-border-inside input,
+.neon-border-inside textarea,
+.neon-border-inside select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.neon-border-inside button {
+  background: #4c00ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+}
+
+
 
 /* ----------------    Main    --------------- */
 
@@ -888,3 +763,213 @@ padding:2px 0 0 0;
 .social-media-list i {
   font-size: 24px;
 }
+
+
+/* ---------  Main Page forms ---------*/
+
+
+.mainPageForm {
+  /* padding-top: 50px; */
+  /* max-width: 400px; */
+  /* margin: 0 auto; */
+  display: block;
+  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  max-height: 85%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.mainPageForm label {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  color: #0756d4;
+  margin: 50px 0 0 0;
+}
+
+.mainPageForm h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.mainPageForm input,
+.mainPageForm textarea,
+.mainPageForm select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.mainPageForm button {
+  background: #4c00ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  height: 45px;
+  width: 110px;
+}
+
+
+/* -------- redeem points -------------------------*/
+
+.createPoints {
+  position: relative;
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.createPoints label {
+  text-align: center;
+}
+
+
+.createPoints input,
+.createPoints textarea,
+.createPoints select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.createPoints button {
+  background: #35b5f1;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.points{
+  display: block;
+  max-width: 100%;
+  align-items: center;
+}
+
+.points-redeem {
+  display: flex;
+  max-width: 100%;
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+  
+}
+
+.points-redeem:hover {
+  box-shadow: 1px 3px 5px rgb(0, 183, 255);
+}
+
+
+
+.points-redeem-h2 {
+  font-size: 20px;
+  color: rgb(112, 216, 152);
+}
+
+.points-redeem-nor {
+  font-size: 15px;
+}
+
+
+.size-block{
+  align-items: center;
+  max-width: 50%;
+  width: 50%;
+  justify-content: center;
+}
+
+/* ---------  Technical Issue ---------*/
+
+
+.tech-Issue {
+  display: block;
+  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  max-height: 85%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.tech-Issue label {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  color: #0756d4;
+  margin: 50px 0 0 0;
+}
+
+.tech-Issue h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.tech-Issue input,
+.tech-Issue textarea,
+.tech-Issue select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.tech-Issue button {
+  background: #4c00ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  height: 45px;
+  width: 110px;
+}
+
+/* --------   Reminders   ------- */
+
+.main-block{
+  display: block;
+  max-width: 100%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.Remin {
+  display: flex;
+  padding: 10px;
+  margin: 20px 0;
+  /* border-bottom: 1px solid black; */
+}
+
+.Remin:hover {
+  box-shadow: 1px 3px 5px rgb(0, 183, 255);
+}
+
+

@@ -50,13 +50,17 @@ const Reminders = () => {
                 <button>Pay Bills</button>
             </form>
         
-                <div className="blog-list">
+                <div className="main-block">
                         {
                             
                          rem.map((item, index) =>(
                             <div className="Remin" key={index}>
-                                <h2 style={{paddingRight:"25px"}}>{ item.remind } </h2>
-                                <p style={{justifyItems:"end",marginRight:"50px"}}>{ item.dat } </p>
+                                <div className="size-block">
+                                    <h2 className="points-redeem-h2">{ item.remind } </h2>
+                                </div>
+                                <div className="size-block">
+                                <h1 className="points-redeem-nor">{ item.dat } </h1>
+                                </div>
                         </div>
                             ) )
             
