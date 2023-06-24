@@ -34,6 +34,7 @@ const Points = () => {
                 <input 
                     type="number"
                     required
+                    value={pointsInput}
                     placeholder="Enter points to redeem"
                     onChange={e => setInpoints(e.target.value)}
                 />

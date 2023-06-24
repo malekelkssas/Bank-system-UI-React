@@ -3,8 +3,7 @@ import { useState } from "react";
 const Reminders = () => {
 
     const [remin, setRemin] = useState("Water Bill");
-    const [data, setDate] = useState();
-
+    const [data, setDate] = useState("mm/dd/yyyy");
     const [rem, setrem] = useState([
         {
             remind:"gas bills",
@@ -24,8 +23,7 @@ const Reminders = () => {
         let tmp = rem;
         tmp.push({remind:remin,dat:data});
         setrem(tmp);
-        setDate('');
-        setRemin('');
+        setDate("mm/dd/yyyy");
     }
 
     return ( 
@@ -44,6 +42,7 @@ const Reminders = () => {
                 <input 
                     type="date"
                     placeholder="Enter payment amount"
+                    value={data}
                     onChange={(e)=>setDate(e.target.value)}
                     required
                 />

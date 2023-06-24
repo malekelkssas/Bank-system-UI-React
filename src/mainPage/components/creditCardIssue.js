@@ -6,14 +6,19 @@ const CreditCardIssue = () => {
     const history = useHistory();
 
     const handleButtonClick = (e) => {
-        // e.preventDefault();
-
-        swal("reported!", "creadit Card issue", "success");
-        history.push("/Main");
+        console.log(document.getElementById('lost').checked)
+        console.log(document.getElementById('stolen').checked );
+        console.log(document.getElementById('theft').checked);
+        if(document.getElementById('lost').checked || document.getElementById('stolen').checked || document.getElementById('theft').checked){
+            swal("reported!", "creadit Card issue", "success");
+            history.push("/Main");
+        }
+        else
+            e.preventDefault();
     }
     return ( 
     <div className="credit">
-        <form>
+        <form >
             <div className='Isscontainer'>
                 <div className='container2'>
                     <label >Credit Card was lost</label>

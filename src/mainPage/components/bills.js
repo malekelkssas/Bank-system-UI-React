@@ -3,7 +3,7 @@ import { useState } from 'react';
 const Bills = () => {
 
     const [amountval, setAmount] = useState('');
-    const [selected, setSelected] = useState('');
+    const [selected, setSelected] = useState('bill-1');
     const [billArr, setBill] = useState(
         [{
             Bill:'Bill1',
@@ -47,6 +47,7 @@ const Bills = () => {
                 <input 
                     type="number"
                     placeholder="Enter payment amount"
+                    value={amountval}
                     onChange={(e)=>setAmount(e.target.value)}
                     required
                 />
