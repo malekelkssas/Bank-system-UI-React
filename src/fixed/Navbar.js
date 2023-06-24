@@ -24,37 +24,28 @@ const Navbar = (props) => {
 
     const location = useLocation();
 
+    
     const [detLocation, setDetLocation] = useState(3);
     const [lolink, setLink] = useState("/");
-
-    useEffect(() => {
-        const storedDetLocation = localStorage.getItem('detLocation');
-        if (storedDetLocation) {
-            setDetLocation(parseInt(storedDetLocation));
-        }
-    }, []);
-
-    useEffect(() => {
-        localStorage.setItem('detLocation', parseInt(detLocation.toString()));
-    }, [detLocation]);
+    
+   
 
     useEffect(()=>{
-        if(location.pathname === "/Main")
-        {
-            setDetLocation(1);
-            setLink("/Main");
-        }
-        else if (location.pathname === "/Admin"){
+        if (location.pathname === "/Admin" || location.pathname === "/AdminNotification" || location.pathname ==="/AddBanker"){
             setDetLocation(2);
             setLink("/Admin");
         }
-        else if (location.pathname === "/Banker"){
+        else if (location.pathname === "/Banker" || location.pathname === "/Notifications" || location.pathname === "/CredirCardAccept" || location.pathname === "/LoanAccept" || location.pathname === "/OpenBankAcount" || location.pathname === "/CloseBankAcountbank"){
             setDetLocation(0);
             setLink("/Banker");
         }
-        else if(location.pathname === "/"){
+        else if(location.pathname === "/" || location.pathname === "/Signin" || location.pathname === "/Acount"){
             setDetLocation(3);
             setLink("/");
+        }
+        else{
+            setDetLocation(1);
+            setLink("/Main");
         }
     },[location])
 

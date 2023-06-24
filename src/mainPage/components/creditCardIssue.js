@@ -12,19 +12,31 @@ const CreditCardIssue = () => {
         history.push("/Main");
     }
     return ( 
-    <div className="mainPageForm">
-        <form style={{marginTop:"40px"}}>
+    <div className="credit">
+        <form>
             <div className='Isscontainer'>
-                <label >Credit Card was lost</label>
+                <div className='container2'>
+                    <label >Credit Card was lost</label>
+                </div>
+                <div className='container2'>
                 <input type="radio" id="lost" name="issue" value="Credit Card was lost"/>
+                </div>
             </div>
             <div className='Isscontainer'>
+            <div className='container2'>
                 <label >Credit Card was stolen</label>
+            </div>
+            <div className='container2'>
                 <input type="radio" id="stolen" name="issue" value="Credit Card was stolen"/>
+                </div>
             </div>
             <div className='Isscontainer'>
+            <div className='container2'>
                 <label >Credit Card was theft</label>
+                </div>
+                <div className='container2'>
                 <input type="radio" id="theft" name="issue" value="Credit Card was theft"/>
+                </div>
             </div>
                 
 

@@ -10,7 +10,7 @@ import LoanAccept from "./mainPage/banker/loanAccept";
 import OpenBankAcount from "./mainPage/banker/openBankAcount";
 import Notifications from "./mainPage/admin/notifications";
 import UserNotifications from "./mainPage/components/userNotification";
-import AdminNotification from "./mainPage/banker/adminNotification";
+import AdminNotification from "./mainPage/admin/adminNotification";
 import CloseBankAcountbank from "./mainPage/banker/closeBankAcount";
 import AddBanker from "./mainPage/admin/addBanker";
 import MainForms from "./mainPage/components/mainPageForms";

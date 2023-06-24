@@ -4,15 +4,16 @@ import swal from 'sweetalert';
 const AddBanker = () => {
 
     const history = useHistory();
-    const handleSubmit = () => {
+
+    const handleSubmit = (e) => {
+        // e.preventDefault();
         swal("Done!", "adding new Banker", "success");
         history.push('/Admin');
     }
     return ( 
-        <div style={{paddingTop:"100px"}}>
             
         <div className="neon-border" style={{display:'flex'}}>
-        <form className="neon-border-inside" style={{zIndex:'1'}}>
+        <form className="neon-border-inside" style={{zIndex:'1'}} onSubmit={handleSubmit}>
                 <label>Acount name</label>
                 <input 
                     type="text"
@@ -29,12 +30,12 @@ const AddBanker = () => {
                     required
                 >
                 </input>
-                <button onClick={handleSubmit}>Add Banker</button>
+                <button >Add Banker</button>
         </form>
-            <div className="try2"></div>
+            
                 
-        </div>
-        </div>
+            </div>
+        
             
      
      );

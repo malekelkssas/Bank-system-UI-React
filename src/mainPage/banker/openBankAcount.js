@@ -76,7 +76,7 @@ const OpenBankAcount = () => {
     
     
     return ( 
-        <div className="blog-details" style={{paddingTop:"100px",display:"grid"}}>
+        <div className="blog-details">
             {
                 handleNoti()
             }

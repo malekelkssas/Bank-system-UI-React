@@ -322,20 +322,9 @@ padding:2px 0 0 0;
 }
 
 
-.Isscontainer {
-  display: flex;
-  align-items: center;
-}
 
-.Isscontainer label {
-  margin-right: 10px;
-}
 
-.Isscontainer input {
-  align-items: center;
-  bottom: 10px;
-  right: 100px;
-}
+
 
 .bank-accounts button {
   background-color: #0A2A5E;
@@ -397,9 +386,11 @@ padding:2px 0 0 0;
 
 /* ---------------- */
 
-.blog-details article {
+.blog-details {
   width: 100%;
   padding: 0px auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .blog-details article{
@@ -521,8 +512,7 @@ padding:2px 0 0 0;
   display: none;
   position: fixed;
   background-color: #f9f9f9;
-  min-width: 10px;
-  max-width: 125px;
+  width: fit-content;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -764,14 +754,67 @@ padding:2px 0 0 0;
   font-size: 24px;
 }
 
+/* ------  credit card  ------ */
+.credit {
+
+  display: block;
+  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  max-height: 85%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.credit label {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  color: #0756d4;
+}
+
+
+
+.credit input,
+.credit textarea,
+.credit select {
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.credit button {
+  background: #4c00ff;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  height: 45px;
+  width: 110px;
+}
+
+
+.Isscontainer {
+  display: flex;
+  align-items: center;
+  margin: 10%;
+}
+
+.container2{
+  max-width: 100%;
+  width: 50%;
+}
 
 /* ---------  Main Page forms ---------*/
 
 
 .mainPageForm {
-  /* padding-top: 50px; */
-  /* max-width: 400px; */
-  /* margin: 0 auto; */
+
   display: block;
   max-width: 100%;
   width: 50%;
