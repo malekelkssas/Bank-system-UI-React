@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Bank-System-UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![logo192](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/460a1ae1-87db-4320-8fab-1fbd903a2cf9)
 
-## Available Scripts
+Bank system UI using React that depends on the following user journeys:
 
-In the project directory, you can run:
+1. Register to use the web application (user may already have a bank account).
+2. Open/ close a bank account.
+3. Apply for a credit card.
+4. Apply for a loan (personal or car).
+5. View bank account transactions.
+6. View credit card transactions.
+7. View credit card points and redeem them for cashback.
+8. Pay for credit card bill partially or fully.
+9. Transfer money to other bank accounts (internal/ domestic/ international).
+10. Set and receive reminders for payments due for gas / electricity/ water/ telephone bills.
+11. Receive reminders for payments due for loans/ credit card bills.
+12. Pay for gas/ water/ electricity/ telephone bills using a third party app (OPTIONAL) or through the bank itself (MANDATORY).
+13. Report technical issues with the system.
+14. Receive notifications about issue resolution and bank announcements.
+15. Report credit card theft/ loss/ damage and apply for replacement.
 
-### `npm start`
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run Locally
 
-### `npm test`
+1- Clone the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  git clone https://github.com/malekelkssas/Bank-system-UI-React.git
+```
 
-### `npm run build`
+2- Go to the project directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3- install node_modules before running the app
+```bash
+  npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4- Run the React app
+```bash
+  npm run start
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Notes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Use username: admin to log in as Admin
+- Use username: banker to log in as banker
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Screenshots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<details>
+	
+![Screenshot (1)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/5866e453-c868-434e-a6e8-abb1edb6eead)
 
-### Code Splitting
+</details>  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<details>
+![Screenshot (3)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/24cf3aa2-7ed1-4a1a-82ac-ec0f2a242d10)
+</details>
+	
 
-### Analyzing the Bundle Size
+<details>
+![Screenshot (4)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/a4108f32-9768-4db4-9359-3ef80d3b4809)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</details>
 
-### Making a Progressive Web App
+<details>
+![Screenshot (5)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/fa0ae2b3-652f-4a4d-b5dd-dc8cdacc594a)
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<details>
+![Screenshot (6)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/7261ee88-bb21-4042-bf97-091064723e7a)
+</details>
 
-### Advanced Configuration
+<details>
+![Screenshot (7)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/76623a9b-94d2-4e20-8c91-0c6775c06ec1)
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<details>
+![Screenshot (8)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/6646fe76-45f7-422c-a3c1-538e1be1b77b)
+</details>
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Authors
+- [Malek Mohamed](https://github.com/malekelkssas)
+- [Yehia Mohamed](https://github.com/YehiaFarghaly)
+
