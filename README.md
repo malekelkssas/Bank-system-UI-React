@@ -15,7 +15,7 @@ Bank system UI using React that depends on the following user journeys:
 9. Transfer money to other bank accounts (internal/ domestic/ international).
 10. Set and receive reminders for payments due for gas / electricity/ water/ telephone bills.
 11. Receive reminders for payments due for loans/ credit card bills.
-12. Pay for gas/ water/ electricity/ telephone bills using a third party app (OPTIONAL) or through the bank itself (MANDATORY).
+12. Pay for gas/ water/ electricity/ telephone bills using a third party app.
 13. Report technical issues with the system.
 14. Receive notifications about issue resolution and bank announcements.
 15. Report credit card theft/ loss/ damage and apply for replacement.
