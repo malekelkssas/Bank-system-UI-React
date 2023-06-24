@@ -48,7 +48,7 @@ Bank system UI using React that depends on the following user journeys:
 
 
 ### Notes
-
+- use any username to log in as normal user
 - Use username: admin to log in as Admin
 - Use username: banker to log in as banker
 
@@ -58,36 +58,38 @@ Bank system UI using React that depends on the following user journeys:
 
 <details>
 	
-![Screenshot (1)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/5866e453-c868-434e-a6e8-abb1edb6eead)
-
-</details>  
+![Screenshot (1)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/57dc7609-5a90-460b-ae51-264287e9f743)
+</details>
 
 <details>
-![Screenshot (3)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/24cf3aa2-7ed1-4a1a-82ac-ec0f2a242d10)
-</details>
 	
-
-<details>
-![Screenshot (4)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/a4108f32-9768-4db4-9359-3ef80d3b4809)
-
+![Screenshot (3)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/2de1b0c1-ec39-4d74-9fff-523caa45bc6a)
 </details>
 
 <details>
-![Screenshot (5)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/fa0ae2b3-652f-4a4d-b5dd-dc8cdacc594a)
+	
+![Screenshot (4)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/371e67b1-b71e-4275-af3f-131d6176cc0a)
 </details>
 
 <details>
-![Screenshot (6)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/7261ee88-bb21-4042-bf97-091064723e7a)
+	
+![Screenshot (5)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/8abea87d-7e38-422c-9209-b21f86586823)
 </details>
 
 <details>
-![Screenshot (7)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/76623a9b-94d2-4e20-8c91-0c6775c06ec1)
+	
+![Screenshot (6)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/e7c76d17-5142-4758-a326-86d281f05d24)
 </details>
 
 <details>
-![Screenshot (8)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/6646fe76-45f7-422c-a3c1-538e1be1b77b)
+	
+![Screenshot (7)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/6a3d3d39-5536-45c6-8bd6-3a7f2cd12311)
 </details>
 
+<details>
+	
+![Screenshot (8)](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/ec761430-e10a-4be7-b4fb-a6cb2a4dda13)
+</details>
 
 
 
