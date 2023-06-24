@@ -1,6 +1,7 @@
 # Bank-System-UI
 
-![logo192](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/460a1ae1-87db-4320-8fab-1fbd903a2cf9)
+![logo512](https://github.com/malekelkssas/Bank-system-UI-React/assets/87043730/9a5415e8-0991-4b47-aed7-f748ce22abf7)
+
 
 Bank system UI using React that depends on the following user journeys:
 
