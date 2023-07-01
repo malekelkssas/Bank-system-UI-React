@@ -1,31 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Points = () => {
 
     const [pointsInput,setInpoints] = useState('');
-
-    const [pointsarr, setpoints] = useState(
-        [{
-            points:'1000',
-            cachBack:"$10.00"
-        },
-        {
-            points:'2000',
-            cachBack:"$10.00"
-        },
-        {
-            points:'3000',
-            cachBack:"$10.00"
-        }]
-    );
+    const [pointsarr, setpoints] = useState(null);
+    const [isPending, setisPending] = useState(true);
+    const [submit, setsubmit] = useState(false);
+    useEffect(()=>{
+        setisPending(true);
+        setTimeout(() => {
+            fetch("http://localhost:8000/point").
+        then(res =>{ return res.json()})
+        .then(data =>{ 
+            setisPending(false);
+            setpoints(data);});
+        }, 1000);
+    },[submit]);
 
     
 
     const handlesubmit = (e) =>{
         e.preventDefault();
-        let tmp = pointsarr;
-        tmp.push({points:pointsInput,cachBack:"$10.00"});
-        setpoints(tmp);
+        setisPending(true);
+        const po = {"points": pointsInput, "cachBack":"$10.00" };
+        fetch("http://localhost:8000/point",{
+            method:'POST',
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(po)
+        }).then(()=>
+            {
+                setpoints(null);
+                setisPending(false);
+                setsubmit(!submit);
+                console.log('finish');}
+        );
         setInpoints('');
+
         };
     return ( 
         <div className="createPoints">
@@ -40,8 +49,8 @@ const Points = () => {
                 />
                 <button>Redeem Points</button>
             </form>
-
-            <div className="points">
+            {isPending && <div style={{width:"100%",marginTop:"5%",fontSize:"20px"}}>Loading...</div>}
+            {pointsarr && <div className="points">
                 <div className="points-redeem">
                         <div className="size-block">
                             <h2 className="points-redeem-h2">{ "points"} </h2>
@@ -62,7 +71,7 @@ const Points = () => {
                     </div>
                 ) )
             }
-            </div>
+            </div>}
         </ div>
      );
 }

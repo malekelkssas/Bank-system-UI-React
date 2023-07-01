@@ -6,7 +6,7 @@ const CloseBankAcount = () => {
     const history = useHistory();
 
     const handleButtonClick = (e) => {
-        // e.preventDefault();
+        
 
         swal("Sended!", "Request", "success");
         history.push("/Main");

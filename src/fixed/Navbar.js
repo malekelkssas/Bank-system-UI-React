@@ -256,12 +256,11 @@ const Navbar = (props) => {
         else if (detLocation === 3){
              return (
                 <div className="disp" >
-                <Link to='/Signin'>Sign in</Link>
                 <Link to="/Acount" style={{
                     color:'white',
                     backgroundColor:"#0A2A5E",
                     borderRadius:'8px'
-                }}>New acount</Link>
+                }}>New Bank acount</Link>
                 </div>
             );
         }

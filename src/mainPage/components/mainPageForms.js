@@ -3,6 +3,9 @@ import { useHistory } from "react-router-dom";
 import swal from 'sweetalert';
 import { useParams } from 'react-router-dom';
 import fetchData from '../customHook/fetchData.js'
+import TextField from '@mui/material/TextField';
+import { Margin } from '@mui/icons-material';
+import Box from '@mui/material/Box';
 
 const MainForms = (props) => {
 
@@ -29,21 +32,30 @@ const MainForms = (props) => {
     const intializePage = () =>{
 
         return buttonData.formFields.map((field, index) => (
-        <div key={index} required>
-      <label>{field.label}</label>
+        <div key={index} className='boxingdiv' >
+      {/* <label>{field.label}</label>
       <input type={field.type}  onChange={(e) => {      if(e.target.value.length === 0)
                                                             trues[index] = false;
                                                             else
                                                             trues[index] = true;
                                                             }}
 
-                                                            required/>
+                                                            required/> */}
+        {/* <div style={{margin:"100px"}}> */}
+        <TextField type={field.type} required id="outlined-basic" label={field.label} variant="outlined" style={{marginTop:"10%"}} onChange={(e) => {      
+                                                          if(e.target.value.length === 0)
+                                                            trues[index] = false;
+                                                            else
+                                                            trues[index] = true;
+                                                            }} />
+        {/* </div> */}
+
       </div>   
   ));
     };
 
     const handleButtonClick = (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         let check = true;
         for(let i=0; i!== trues.length;i++){
             check = trues[i] & check;
@@ -52,6 +64,9 @@ const MainForms = (props) => {
         swal("Done!", buttonData.buttonText, "success");
         history.push("/Main");
     }
+    // else{
+    //   e.preventDefault();
+    // }
   };
   const Selection = ()=>{
     if(choice === 2)
@@ -63,6 +78,7 @@ const MainForms = (props) => {
                     <option value="bill-1">Personal</option>
                     <option value="bill-2">car</option>
                 </select>
+                
           </>
     );
     }
@@ -70,13 +86,22 @@ const MainForms = (props) => {
 
 
     return ( 
-         <div className="mainPageForm">
-            <form action="" onSubmit={handleButtonClick}>
+       
+            <Box
+            className='boxing'
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      onSubmit={handleButtonClick}
+      autoComplete="off"
+    >
                 {intializePage()}
                 {Selection()}
-                <button>{buttonData.buttonText}</button>
-            </form>
-        </div>
+                <button style={{marginTop:"5%"}}>{buttonData.buttonText}</button>
+            {/* </form> */}
+            </Box>
+        // </div>
      );
 }
  

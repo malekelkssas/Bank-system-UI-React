@@ -1,0 +1,38 @@
+{
+  "userNotifications": [
+    {
+      "head": "Issue Resolution",
+      "body": "Dear Customer. Thanks for your last issue. The issue is resolved now."
+    },
+    {
+      "head": "Bank Announcement",
+      "body": "New payment system is now available."
+    },
+    {
+      "head": "Reminder",
+      "body": "Watch out, The deadline for paying the telephone bill is tomorrow !"
+    }
+  ],
+  "point": [
+    {
+      "points": 1000,
+      "cachBack": "$10.00",
+      "id": 0
+    },
+    {
+      "points": 2000,
+      "cachBack": "$10.00",
+      "id": 1
+    },
+    {
+      "points": 3000,
+      "cachBack": "$10.00",
+      "id": 2
+    },
+    {
+      "points": "123",
+      "cachBack": "$10.00",
+      "id": 3
+    }
+  ]
+}
